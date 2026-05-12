@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 200 8" width="400" height="16">
-  <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="-15 -15 230 38" width="400" height="16">
+  <defs><filter id="g" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
   <line x1="0" y1="4" x2="200" y2="4" stroke="#00ffff" stroke-width="1.5" opacity="0.5" filter="url(#g)"/>
   <line x1="90" y1="4" x2="110" y2="4" stroke="#ff00ff" stroke-width="2.5" filter="url(#g)">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>

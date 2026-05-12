@@ -9,7 +9,7 @@
     <pattern id="grid2" width="80" height="80" patternUnits="userSpaceOnUse">
       <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#00ffff" stroke-width="1.2" opacity="0.12"/>
     </pattern>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="3"/></filter>
   </defs>
   <rect width="320" height="240" fill="url(#sky)"/>
   <rect width="320" height="240" fill="url(#grid2)"/>

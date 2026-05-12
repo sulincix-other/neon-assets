@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 800 600" width="800" height="600">
   <defs>
     <!-- Neon Glow Filters -->
-    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="glowPink" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000">
       <feGaussianBlur stdDeviation="4" result="blur1"/>
       <feGaussianBlur stdDeviation="8" result="blur2"/>
       <feGaussianBlur stdDeviation="16" result="blur3"/>
@@ -12,7 +12,7 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="glowCyan" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000">
       <feGaussianBlur stdDeviation="4" result="blur1"/>
       <feGaussianBlur stdDeviation="8" result="blur2"/>
       <feGaussianBlur stdDeviation="16" result="blur3"/>
@@ -23,7 +23,7 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="glowGreen" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="glowGreen" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000">
       <feGaussianBlur stdDeviation="4" result="blur1"/>
       <feGaussianBlur stdDeviation="8" result="blur2"/>
       <feGaussianBlur stdDeviation="16" result="blur3"/>
@@ -34,7 +34,7 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="glowYellow" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="glowYellow" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000">
       <feGaussianBlur stdDeviation="4" result="blur1"/>
       <feGaussianBlur stdDeviation="8" result="blur2"/>
       <feGaussianBlur stdDeviation="16" result="blur3"/>
@@ -45,7 +45,7 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="glowPurple" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="glowPurple" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000">
       <feGaussianBlur stdDeviation="4" result="blur1"/>
       <feGaussianBlur stdDeviation="8" result="blur2"/>
       <feGaussianBlur stdDeviation="16" result="blur3"/>
@@ -56,7 +56,7 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="glowRed" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="glowRed" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000">
       <feGaussianBlur stdDeviation="4" result="blur1"/>
       <feGaussianBlur stdDeviation="8" result="blur2"/>
       <feGaussianBlur stdDeviation="16" result="blur3"/>
@@ -67,7 +67,7 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="glowOrange" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="glowOrange" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000">
       <feGaussianBlur stdDeviation="4" result="blur1"/>
       <feGaussianBlur stdDeviation="8" result="blur2"/>
       <feGaussianBlur stdDeviation="16" result="blur3"/>
@@ -78,7 +78,7 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="glowBlue" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="glowBlue" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000">
       <feGaussianBlur stdDeviation="4" result="blur1"/>
       <feGaussianBlur stdDeviation="8" result="blur2"/>
       <feGaussianBlur stdDeviation="16" result="blur3"/>

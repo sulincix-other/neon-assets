@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 48 48" width="48" height="48">
   <defs>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
   <ellipse cx="24" cy="34" rx="6" ry="3" fill="#00aa4411" stroke="#00ff66" stroke-width="0.3" opacity="0.2"/>
   <path d="M14,32 Q12,26 16,22 Q18,18 22,16 Q26,14 30,18 Q34,22 34,28 Q34,32 30,34 Z" fill="#00aa4444" stroke="#00ff66" stroke-width="1" filter="url(#glow)"/>

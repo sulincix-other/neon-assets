@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 48 48" width="48" height="48">
   <defs>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="glow-strong" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow-strong" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
   <ellipse cx="24" cy="40" rx="12" ry="3" fill="#ff440011" stroke="#ff4400" stroke-width="0.3" opacity="0.2"/>
   <path d="M16,36 L14,32 L16,34 L18,30 L16,32 L18,28 L16,30 L18,26 L20,28 L22,24 L24,28 L26,22 L24,26 L22,20 L24,24 L26,18 L28,22 L30,26 L28,24 L30,28 L32,24 L30,26 L32,30 L34,26 L32,30 L34,34 L32,32 L30,36 Z" fill="none" stroke="#ff6600" stroke-width="1.5" filter="url(#glow)"/>

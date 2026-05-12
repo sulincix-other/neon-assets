@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 48 40" width="96" height="80">
-  <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="-15 -15 78 70" width="96" height="80">
+  <defs><filter id="g" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
   <path d="M4,4 L44,4 Q48,4 48,8 L48,28 Q48,32 44,32 L16,32 L8,38 L10,32 L4,32 Q0,32 0,28 L0,8 Q0,4 4,4 Z" fill="#0a0a2e" stroke="#00ffff" stroke-width="2" filter="url(#g)"/>
   <rect x="8" y="12" width="32" height="2" rx="1" fill="#00ffff" opacity="0.4"/>
   <rect x="8" y="18" width="24" height="2" rx="1" fill="#00ffff" opacity="0.3"/>

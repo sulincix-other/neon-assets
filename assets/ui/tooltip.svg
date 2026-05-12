@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 200 80" width="400" height="160">
-  <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter></defs>
+<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="-15 -15 230 110" width="400" height="160">
+  <defs><filter id="g" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="3"/></filter></defs>
   <rect x="0" y="0" width="200" height="68" rx="8" fill="#0a0a30" stroke="#ffff00" stroke-width="2" filter="url(#g)"/>
   <rect x="4" y="4" width="192" height="60" rx="6" fill="none" stroke="#ffff00" stroke-width="0.5" opacity="0.25"/>
   <rect x="4" y="4" width="192" height="60" rx="6" fill="#ffff00" opacity="0.03"/>
