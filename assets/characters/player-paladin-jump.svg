@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -40 60 80" width="240" height="240">
+  <defs>
+    <filter id="glowOrange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowYellow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowRed" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;-4,-15;0,0" dur="1.5s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="26" rx="16" ry="3" fill="rgba(0,0,0,0.4)">
+      <animate attributeName="rx" values="16;7;16" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="3;1;3" dur="1.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <rect x="-8" y="12" width="6" height="14" rx="2" fill="#ff6600" filter="url(#glowOrange)">
+      <animate attributeName="y" values="12;20;12" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="2" y="12" width="6" height="14" rx="2" fill="#ff6600" filter="url(#glowOrange)">
+      <animate attributeName="y" values="12;20;12" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="14;6;14" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-12" y="-2" width="24" height="16" rx="5" fill="none" stroke="#ff6600" stroke-width="2.5" filter="url(#glowOrange)"/>
+    <rect x="-10" y="0" width="20" height="10" rx="3" fill="#ff6600" opacity="0.1"/>
+    <line x1="-12" y1="2" x2="12" y2="2" stroke="#ff6600" stroke-width="0.8" opacity="0.3"/>
+    <rect x="-18" y="-2" width="6" height="6" rx="3" fill="none" stroke="#ff6600" stroke-width="1.5" filter="url(#glowOrange)">
+      <animate attributeName="y" values="-2;6;-2" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="12" y="-2" width="6" height="6" rx="3" fill="none" stroke="#ff6600" stroke-width="1.5" filter="url(#glowOrange)">
+      <animate attributeName="y" values="-2;-8;-2" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="0" cy="-14" r="9" fill="none" stroke="#ffff00" stroke-width="2" filter="url(#glowYellow)"/>
+    <rect x="-7" y="-17" width="14" height="5" rx="2" fill="#ffff00" opacity="0.6" filter="url(#glowYellow)"/>
+    <path d="M-5,-23 L0,-30 L5,-23" fill="none" stroke="#ffff00" stroke-width="1.5" filter="url(#glowYellow)"/>
+    <circle cx="0" cy="-32" r="2" fill="#ff0044" filter="url(#glowRed)">
+      <animate attributeName="r" values="2;3.5;2" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="16" y1="0" x2="24" y2="-10" stroke="#ff6600" stroke-width="2" filter="url(#glowOrange)">
+      <animate attributeName="y1" values="0;-8;0" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <circle cx="25" cy="-12" r="2" fill="#ffff00" filter="url(#glowYellow)">
+      <animate attributeName="cy" values="-12;-20;-12" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -40 60 80" width="240" height="240">
+  <defs>
+    <filter id="glowOrange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowYellow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowRed" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;-2,-1;0,0" dur="0.95s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="26" rx="16" ry="3" fill="rgba(0,0,0,0.4)">
+      <animate attributeName="rx" values="16;14;16;16" dur="0.95s" repeatCount="indefinite"/>
+    </ellipse>
+    <rect x="-8" y="12" width="6" height="14" rx="2" fill="#ff6600" filter="url(#glowOrange)">
+      <animate attributeName="x" values="-8;-2;-8" dur="0.47s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="2" y="12" width="6" height="14" rx="2" fill="#ff6600" filter="url(#glowOrange)">
+      <animate attributeName="x" values="2;-4;2" dur="0.47s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-12" y="-2" width="24" height="16" rx="5" fill="none" stroke="#ff6600" stroke-width="2.5" filter="url(#glowOrange)">
+      <animate attributeName="x" values="-12;-10;-12" dur="0.95s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-10" y="0" width="20" height="10" rx="3" fill="#ff6600" opacity="0.1">
+      <animate attributeName="x" values="-10;-8;-10" dur="0.95s" repeatCount="indefinite"/>
+    </rect>
+    <line x1="-12" y1="2" x2="12" y2="2" stroke="#ff6600" stroke-width="0.8" opacity="0.3">
+      <animate attributeName="x1" values="-12;-10;-12" dur="0.95s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="12;14;12" dur="0.95s" repeatCount="indefinite"/>
+    </line>
+    <rect x="-18" y="-2" width="6" height="6" rx="3" fill="none" stroke="#ff6600" stroke-width="1.5" filter="url(#glowOrange)">
+      <animate attributeName="x" values="-18;-16;-18" dur="0.95s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="12" y="-2" width="6" height="6" rx="3" fill="none" stroke="#ff6600" stroke-width="1.5" filter="url(#glowOrange)">
+      <animate attributeName="x" values="12;14;12" dur="0.95s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="0" cy="-14" r="9" fill="none" stroke="#ffff00" stroke-width="2" filter="url(#glowYellow)">
+      <animate attributeName="cx" values="0;2;0" dur="0.95s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="-7" y="-17" width="14" height="5" rx="2" fill="#ffff00" opacity="0.6" filter="url(#glowYellow)">
+      <animate attributeName="x" values="-7;-5;-7" dur="0.95s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M-5,-23 L0,-30 L5,-23" fill="none" stroke="#ffff00" stroke-width="1.5" filter="url(#glowYellow)">
+      <animate attributeName="d" values="M-5,-23 L0,-30 L5,-23;M-3,-23 L2,-30 L7,-23;M-5,-23 L0,-30 L5,-23" dur="0.95s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="0" cy="-32" r="2" fill="#ff0044" filter="url(#glowRed)">
+      <animate attributeName="cx" values="0;2;0" dur="0.95s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="16" y1="0" x2="24" y2="-10" stroke="#ff6600" stroke-width="2" filter="url(#glowOrange)">
+      <animate attributeName="x1" values="16;18;16" dur="0.95s" repeatCount="indefinite"/>
+    </line>
+    <circle cx="25" cy="-12" r="2" fill="#ffff00" filter="url(#glowYellow)">
+      <animate attributeName="cx" values="25;27;25" dur="0.95s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
