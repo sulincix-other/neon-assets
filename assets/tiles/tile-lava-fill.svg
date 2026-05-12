@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 48 48" width="48" height="48">
   <defs><filter id="g" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-  <rect x="0" y="0" width="48" height="48" fill="#1a0800"/>
-  <rect x="0" y="0" width="48" height="48" fill="#2a1000" opacity="0.65"/>
+  <rect x="0" y="0" width="48" height="48" fill="#661100"/>
+  <rect x="0" y="0" width="48" height="48" fill="#661100" opacity="0.65"/>
   <circle cx="6" cy="8" r="1.2" fill="#ffaa00" opacity="0.6" filter="url(#g)">
     <animate attributeName="opacity" values="0.6;0.2;0.6" dur="0.8s" repeatCount="indefinite"/>
   </circle>

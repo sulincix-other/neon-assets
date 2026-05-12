@@ -59,17 +59,16 @@
      y="0"
      width="48"
      height="48"
-     fill="#001828"
-     id="rect2" />
+      fill="#004488"
+      id="rect2" />
   <rect
      x="0"
      y="0"
      width="48"
      height="48"
-     fill="#002838"
+     fill="#004488"
      opacity="0.65"
-     id="rect3"
-     style="fill:#004488;fill-opacity:1" />
+     id="rect3" />
   <circle
      cx="8"
      cy="8"
