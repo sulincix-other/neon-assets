@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 48 48" width="48" height="48">
   <defs>
-    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
   <path d="M4,30 Q12,26 20,32 Q28,38 36,30 Q44,22 44,30" fill="none" stroke="#ff6600" stroke-width="1.5" filter="url(#glow)">
     <animate attributeName="d" values="M4,30 Q12,26 20,32 Q28,38 36,30 Q44,22 44,30;M4,32 Q12,28 20,34 Q28,40 36,32 Q44,24 44,32;M4,30 Q12,26 20,32 Q28,38 36,30 Q44,22 44,30" dur="0.5s" repeatCount="indefinite"/>

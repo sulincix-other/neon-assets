@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -30 60 60" width="200" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="-30 -30 60 60" width="200" height="200">
   <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
   <g>
     <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="0.7s" repeatCount="indefinite"/>

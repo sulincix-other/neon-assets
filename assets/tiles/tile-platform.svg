@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
-  <defs><filter id="g"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 48 48" width="48" height="48">
+  <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
   <rect x="0" y="0" width="48" height="48" fill="#0a0600"/>
   <rect x="0" y="0" width="48" height="6" fill="#2a1404" stroke="#884422" stroke-width="1" filter="url(#g)"/>
   <line x1="0" y1="6" x2="48" y2="6" stroke="#aa6633" stroke-width="1.5" filter="url(#g)"/>
