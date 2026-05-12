@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 32" width="48" height="64">
+  <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="5" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <line x1="14" y1="8" x2="6" y2="30" stroke="#8B4513" stroke-width="3" stroke-linecap="round" filter="url(#g)"/>
+  <line x1="14" y1="8" x2="6" y2="30" stroke="#ff8800" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+  <line x1="10" y1="24" x2="18" y2="24" stroke="#ff00ff" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+  <line x1="10" y1="24" x2="14" y2="2" stroke="#ff00ff" stroke-width="2" stroke-linecap="round" filter="url(#g)"/>
+  <circle cx="14" cy="2" r="3" fill="#ff00ff" opacity="0.8" filter="url(#g)">
+    <animate attributeName="r" values="3;4;3" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="14" cy="2" r="6" fill="none" stroke="#ff00ff" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="r" values="6;8;6" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

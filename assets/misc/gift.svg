@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 28" width="64" height="56">
+  <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect x="4" y="12" width="24" height="14" rx="2" fill="#0a0a2e" stroke="#ff00ff" stroke-width="2" filter="url(#g)"/>
+  <path d="M16,2 L16,26" stroke="#ff00ff" stroke-width="2.5" filter="url(#g)"/>
+  <path d="M8,8 Q16,2 16,8 Q16,2 24,8" fill="none" stroke="#ff00ff" stroke-width="2" stroke-linecap="round" filter="url(#g)"/>
+  <polygon points="16,12 12,8 20,8" fill="#ff00ff" opacity="0.3"/>
+  <polygon points="16,24 12,28 20,28" fill="#ff00ff" opacity="0.15"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="72" height="72">
+  <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <circle cx="18" cy="18" r="15" fill="#0a0a2e" stroke="#00ffff" stroke-width="2" filter="url(#g)"/>
+  <circle cx="18" cy="18" r="13" fill="none" stroke="#00ffff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="18" y1="8" x2="18" y2="12" stroke="#00ffff" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="18" y1="24" x2="18" y2="28" stroke="#00ffff" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="8" y1="18" x2="12" y2="18" stroke="#00ffff" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="24" y1="18" x2="28" y2="18" stroke="#00ffff" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="18" y1="18" x2="18" y2="10" stroke="#00ffff" stroke-width="2" stroke-linecap="round" filter="url(#g)">
+    <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="12s" repeatCount="indefinite"/>
+  </line>
+  <line x1="18" y1="18" x2="25" y2="18" stroke="#ff00ff" stroke-width="1.5" stroke-linecap="round" filter="url(#g)">
+    <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="18" cy="18" r="1.5" fill="#00ffff" filter="url(#g)"/>
+</svg>
