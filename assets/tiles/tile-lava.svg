@@ -2,11 +2,11 @@
   <defs><filter id="g" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
   <rect x="0" y="0" width="48" height="48" fill="#1a0800"/>
   <rect x="0" y="0" width="48" height="48" fill="#2a1000" opacity="0.65"/>
-  <polygon points="0,42 4,34 8,40 12,30 16,38 20,28 24,36 28,24 32,34 36,22 40,32 44,20 48,28 48,48 0,48" fill="#66110033" stroke="#ff4400" stroke-width="0.8" opacity="0.7" filter="url(#g)">
-    <animate attributeName="points" values="0,42 4,34 8,40 12,30 16,38 20,28 24,36 28,24 32,34 36,22 40,32 44,20 48,28 48,48 0,48;0,42 4,48 8,40 12,46 16,38 20,44 24,36 28,42 32,34 36,40 40,32 44,38 48,28 48,48 0,48;0,42 4,34 8,40 12,30 16,38 20,28 24,36 28,24 32,34 36,22 40,32 44,20 48,28 48,48 0,48" dur="1.2s" repeatCount="indefinite"/>
+  <polygon points="0,35 4,34 8,40 12,30 16,38 20,28 24,36 28,24 32,34 36,22 40,32 44,20 48,35 48,48 0,48" fill="#66110033" stroke="#ff4400" stroke-width="0.8" opacity="0.7" filter="url(#g)">
+    <animate attributeName="points" values="0,35 4,34 8,40 12,30 16,38 20,28 24,36 28,24 32,34 36,22 40,32 44,20 48,35 48,48 0,48;0,35 4,48 8,40 12,46 16,38 20,44 24,36 28,42 32,34 36,40 40,32 44,38 48,35 48,48 0,48;0,35 4,34 8,40 12,30 16,38 20,28 24,36 28,24 32,34 36,22 40,32 44,20 48,35 48,48 0,48" dur="1.2s" repeatCount="indefinite"/>
   </polygon>
-  <polygon points="0,48 6,38 12,44 18,34 24,40 30,28 36,36 42,26 48,34 48,48 0,48" fill="#44110022" stroke="#ff6600" stroke-width="0.5" opacity="0.4" filter="url(#g)">
-    <animate attributeName="points" values="0,48 6,38 12,44 18,34 24,40 30,28 36,36 42,26 48,34 48,48 0,48;0,48 6,46 12,48 18,42 24,48 30,36 36,44 42,34 48,42 48,48 0,48;0,48 6,38 12,44 18,34 24,40 30,28 36,36 42,26 48,34 48,48 0,48" dur="1.5s" repeatCount="indefinite"/>
+  <polygon points="0,41 6,38 12,44 18,34 24,40 30,28 36,36 42,26 48,41 48,48 0,48" fill="#44110022" stroke="#ff6600" stroke-width="0.5" opacity="0.4" filter="url(#g)">
+    <animate attributeName="points" values="0,41 6,38 12,44 18,34 24,40 30,28 36,36 42,26 48,41 48,48 0,48;0,45 6,46 12,48 18,42 24,48 30,36 36,44 42,34 48,45 48,48 0,48;0,41 6,38 12,44 18,34 24,40 30,28 36,36 42,26 48,41 48,48 0,48" dur="1.5s" repeatCount="indefinite"/>
   </polygon>
   <path d="M6,6 L10,10 L14,6" fill="none" stroke="#ff440033" stroke-width="0.5" filter="url(#g)">
     <animate attributeName="opacity" values="0.3;0.6;0.3" dur="0.8s" repeatCount="indefinite"/>
