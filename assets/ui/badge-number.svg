@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="-15 -15 58 58" width="56" height="56">
-  <defs><filter id="g" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="5" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <defs><filter id="g" filterUnits="userSpaceOnUse" x="-80" y="-80" width="160" height="160"><feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="5" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
   <circle cx="14" cy="14" r="12" fill="#ff0044" opacity="0.85" filter="url(#g)"/>
   <circle cx="14" cy="14" r="12" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
   <circle cx="14" cy="14" r="2.5" fill="#ffffff" opacity="0.6" filter="url(#g)"/>

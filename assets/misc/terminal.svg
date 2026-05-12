@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="-25 -30 50 60" width="200" height="200">
+  <defs>
+    <filter id="g" filterUnits="userSpaceOnUse" x="-80" y="-80" width="160" height="160">
+      <feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="2.5s" repeatCount="indefinite"/>
+    <rect x="-16" y="-18" width="32" height="24" rx="2" fill="none" stroke="#00ffff" stroke-width="2" filter="url(#g)"/>
+    <rect x="-16" y="-18" width="32" height="24" rx="2" fill="#00ffff" opacity="0.06"/>
+    <rect x="-12" y="-14" width="24" height="16" rx="1" fill="#00ffff" opacity="0.04"/>
+    <line x1="-10" y1="-10" x2="-2" y2="-10" stroke="#00ffff" stroke-width="1" filter="url(#g)" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="-10" y1="-6" x2="4" y2="-6" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <line x1="-10" y1="-2" x2="8" y2="-2" stroke="#ff00ff" stroke-width="1" filter="url(#g)" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <rect x="-8" y="5" width="16" height="10" rx="3" fill="none" stroke="#00ffff" stroke-width="2" filter="url(#g)"/>
+    <rect x="-8" y="5" width="16" height="10" rx="3" fill="#00ffff" opacity="0.08"/>
+    <rect x="-3" y="8" width="6" height="4" rx="1" fill="#00ffff" opacity="0.3">
+      <animate attributeName="fill" values="#00ffff;#ffff00;#00ffff" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-14" y="16" width="28" height="2" rx="1" fill="#00ffff" opacity="0.2"/>
+    <rect x="-6" y="19" width="12" height="1.5" rx="1" fill="#00ffff" opacity="0.15"/>
+    <circle cx="12" cy="-12" r="1" fill="#ff00ff" filter="url(#g)">
+      <animate attributeName="opacity" values="1;0.3;1" dur="0.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

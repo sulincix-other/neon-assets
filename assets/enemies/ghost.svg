@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="-30 -35 60 70" width="240" height="240">
   <defs>
-    <filter id="glow" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000">
+    <filter id="glow" filterUnits="userSpaceOnUse" x="-80" y="-80" width="160" height="160">
       <feGaussianBlur stdDeviation="4" result="b1"/><feGaussianBlur stdDeviation="8" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>

@@ -35,10 +35,10 @@
     <filter
        id="g"
        filterUnits="userSpaceOnUse"
-       x="-500"
-       y="-500"
-       width="2000"
-       height="2000">
+       x="-80"
+       y="-80"
+       width="160"
+       height="160">
       <feGaussianBlur
          stdDeviation="2"
          result="b1"

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="-15 -15 90 60" width="120" height="60">
-  <defs><filter id="g" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="2"/></filter></defs>
+  <defs><filter id="g" filterUnits="userSpaceOnUse" x="-80" y="-80" width="160" height="160"><feGaussianBlur stdDeviation="2"/></filter></defs>
   <rect x="0" y="0" width="60" height="30" rx="15" fill="#0a0a2e" stroke="#ff0044" stroke-width="1.5" filter="url(#g)"/>
   <circle cx="15" cy="15" r="10" fill="#ff0044" filter="url(#g)"/>
   <circle cx="15" cy="15" r="4" fill="#0a0a2e"/>

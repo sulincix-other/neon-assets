@@ -3,8 +3,8 @@
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#050510"/><stop offset="30%" stop-color="#0a0a30"/><stop offset="100%" stop-color="#1a0a40"/>
     </linearGradient>
-    <filter id="glow" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="3"/></filter>
-    <filter id="glowBig" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="-80" y="-80" width="160" height="160"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="glowBig" filterUnits="userSpaceOnUse" x="-80" y="-80" width="160" height="160"><feGaussianBlur stdDeviation="6"/></filter>
   </defs>
   <rect width="320" height="240" fill="url(#sky)"/>
   <g filter="url(#glowBig)" opacity="0.35">
