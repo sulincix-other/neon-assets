@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -35 60 70" width="240" height="240">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0;-4;0,0" dur="1.7s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0;-15;0;15;0" dur="3s" repeatCount="indefinite"/>
+      <circle cx="0" cy="-10" r="8" fill="none" stroke="#ffff00" stroke-width="2" filter="url(#glow)"/>
+      <rect x="-2" y="-2" width="4" height="18" rx="1" fill="none" stroke="#ffff00" stroke-width="2" filter="url(#glow)"/>
+      <rect x="-1" y="12" width="5" height="4" rx="0.8" fill="none" stroke="#ffff00" stroke-width="1.2"/>
+      <rect x="-1" y="8" width="5" height="4" rx="0.8" fill="none" stroke="#ffff00" stroke-width="1.2"/>
+      <circle cx="0" cy="-10" r="3" fill="#ffff00" opacity="0.2">
+        <animate attributeName="r" values="3;4;3" dur="1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>

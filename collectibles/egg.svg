@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-25 -30 50 60" width="200" height="200">
+  <defs>
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0;-3;0,0" dur="1.8s" repeatCount="indefinite"/>
+    <path d="M0,-16 Q-10,-14 -10,0 Q-10,14 0,18 Q10,14 10,0 Q10,-14 0,-16Z" fill="none" stroke="#ff00ff" stroke-width="2" filter="url(#glowPink)"/>
+    <path d="M0,-12 Q-6,-10 -6,0 Q-6,10 0,13 Q6,10 6,0 Q6,-10 0,-12Z" fill="#ff00ff" opacity="0.08">
+      <animate attributeName="opacity" values="0.08;0.2;0.08" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="0" cy="0" r="2" fill="#00ffff" filter="url(#glowCyan)">
+      <animate attributeName="r" values="2;3;2" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-4,-6 Q0,-10 4,-6" fill="none" stroke="#00ffff" stroke-width="0.8" opacity="0.4"/>
+  </g>
+</svg>

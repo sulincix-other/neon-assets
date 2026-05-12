@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -40 60 80" width="240" height="240">
+  <defs>
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowPurple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="1.4s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="26" rx="14" ry="3" fill="rgba(0,0,0,0.4)"/>
+    <rect x="-5" y="14" width="4" height="12" rx="2" fill="#9900ff" filter="url(#glowPurple)">
+      <animate attributeName="x" values="-5;-3;-5" dur="0.35s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1" y="14" width="4" height="12" rx="2" fill="#9900ff" filter="url(#glowPurple)">
+      <animate attributeName="x" values="1;3;1" dur="0.35s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-7" y="1" width="14" height="14" rx="4" fill="none" stroke="#9900ff" stroke-width="2" filter="url(#glowPurple)"/>
+    <rect x="-5" y="4" width="10" height="6" rx="2" fill="#9900ff" opacity="0.15"/>
+    <rect x="-12" y="3" width="5" height="4" rx="2" fill="#9900ff" filter="url(#glowPurple)">
+      <animate attributeName="x" values="-12;-10;-12" dur="0.7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="7" y="3" width="5" height="4" rx="2" fill="#9900ff" filter="url(#glowPurple)">
+      <animate attributeName="x" values="7;5;7" dur="0.7s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="0" cy="-9" r="8" fill="none" stroke="#ff00ff" stroke-width="2" filter="url(#glowPink)"/>
+    <rect x="-5" y="-12" width="10" height="4" rx="2" fill="#ff00ff" opacity="0.7" filter="url(#glowPink)">
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="1.4s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M-4,-18 L0,-28 L4,-18" fill="none" stroke="#ff00ff" stroke-width="1.5" filter="url(#glowPink)"/>
+    <circle cx="0" cy="-30" r="2.5" fill="#ff00ff" filter="url(#glowPink)">
+      <animate attributeName="r" values="2.5;4;2.5" dur="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-8,-18 Q-12,-22 -10,-26" fill="none" stroke="#ff00ff" stroke-width="1" opacity="0.4"/>
+    <path d="M8,-18 Q12,-22 10,-26" fill="none" stroke="#ff00ff" stroke-width="1" opacity="0.4"/>
+    <line x1="12" y1="2" x2="18" y2="-8" stroke="#9900ff" stroke-width="1.5" filter="url(#glowPurple)"/>
+    <circle cx="19" cy="-10" r="2" fill="#ff00ff" filter="url(#glowPink)">
+      <animate attributeName="r" values="2;3;2" dur="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

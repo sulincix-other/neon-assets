@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35 -30 70 60" width="240" height="240">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="1.2s" repeatCount="indefinite"/>
+    <path d="M-4,0 Q-14,-12 -26,-10 Q-20,-2 -14,2 Q-20,6 -26,14 Q-14,12 -4,0Z" fill="none" stroke="#00ffff" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="d" values="M-4,0 Q-14,-12 -26,-10 Q-20,-2 -14,2 Q-20,6 -26,14 Q-14,12 -4,0Z;M-4,0 Q-14,-6 -22,-6 Q-18,-1 -12,2 Q-18,5 -22,10 Q-14,8 -4,0Z;M-4,0 Q-14,-12 -26,-10 Q-20,-2 -14,2 Q-20,6 -26,14 Q-14,12 -4,0Z" dur="0.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M4,0 Q14,-12 26,-10 Q20,-2 14,2 Q20,6 26,14 Q14,12 4,0Z" fill="none" stroke="#00ffff" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="d" values="M4,0 Q14,-12 26,-10 Q20,-2 14,2 Q20,6 26,14 Q14,12 4,0Z;M4,0 Q14,-6 22,-6 Q18,-1 12,2 Q18,5 22,10 Q14,8 4,0Z;M4,0 Q14,-12 26,-10 Q20,-2 14,2 Q20,6 26,14 Q14,12 4,0Z" dur="0.4s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="0" cy="0" r="3" fill="none" stroke="#00ffff" stroke-width="1.5" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="1.5" fill="#00ffff" opacity="0.5">
+      <animate attributeName="r" values="1.5;2.5;1.5" dur="0.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

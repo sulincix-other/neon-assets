@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -30 60 60" width="200" height="200">
+  <defs>
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b1"/><feGaussianBlur stdDeviation="8" result="b2"/><feGaussianBlur stdDeviation="16" result="b3"/><feMerge><feMergeNode in="b3"/><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <circle cx="0" cy="0" r="5" fill="#ff00ff" filter="url(#glowPink)">
+      <animate attributeName="r" values="5;8;5" dur="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#ff00ff" stroke-width="1.5" filter="url(#glowPink)">
+      <animate attributeName="r" values="12;18;12" dur="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#ff00ff" stroke-width="1" filter="url(#glowPink)">
+      <animate attributeName="r" values="20;28;20" dur="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="0.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

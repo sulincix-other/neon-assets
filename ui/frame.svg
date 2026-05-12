@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="640" height="480">
+  <defs><filter id="g"><feGaussianBlur stdDeviation="3"/></filter></defs>
+  <rect x="4" y="4" width="312" height="232" rx="12" fill="none" stroke="#00ffff" stroke-width="2.5" filter="url(#g)"/>
+  <rect x="10" y="10" width="300" height="220" rx="8" fill="none" stroke="#00ffff" stroke-width="0.5" opacity="0.25"/>
+  <path d="M20,20 L60,20 M20,20 L20,60" fill="none" stroke="#00ffff" stroke-width="2.5" filter="url(#g)"/>
+  <path d="M300,20 L260,20 M300,20 L300,60" fill="none" stroke="#00ffff" stroke-width="2.5" filter="url(#g)"/>
+  <path d="M20,220 L60,220 M20,220 L20,180" fill="none" stroke="#00ffff" stroke-width="2.5" filter="url(#g)"/>
+  <path d="M300,220 L260,220 M300,220 L300,180" fill="none" stroke="#00ffff" stroke-width="2.5" filter="url(#g)"/>
+</svg>

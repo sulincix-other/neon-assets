@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -35 60 70" width="240" height="240">
+  <defs>
+    <filter id="glowOrange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowYellow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;6,-4;0,0;-6,-4;0,0" dur="2s" repeatCount="indefinite"/>
+    <circle cx="0" cy="0" r="16" fill="#ff3300" opacity="0.08">
+      <animate attributeName="r" values="16;22;16" dur="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#ff6600" stroke-width="2.5" filter="url(#glowOrange)">
+      <animate attributeName="stroke" values="#ff3300;#ff6600;#ff3300" dur="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="5" fill="#ff6600" opacity="0.25">
+      <animate attributeName="fill" values="#ff3300;#ff6600;#ff3300" dur="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-3,-12 Q0,-18 3,-12" fill="none" stroke="#ffff00" stroke-width="1.5" filter="url(#glowYellow)">
+      <animate attributeName="d" values="M-3,-12 Q0,-18 3,-12;M-2,-12 Q0,-22 2,-12;M-3,-12 Q0,-18 3,-12" dur="0.15s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-6,-4 Q-12,-6 -6,0" fill="none" stroke="#ff6600" stroke-width="1" opacity="0.6"/>
+    <path d="M6,-4 Q12,-6 6,0" fill="none" stroke="#ff6600" stroke-width="1" opacity="0.6"/>
+    <path d="M-4,6 Q-8,10 -2,8" fill="none" stroke="#ff6600" stroke-width="0.8" opacity="0.4"/>
+    <path d="M4,6 Q8,10 2,8" fill="none" stroke="#ff6600" stroke-width="0.8" opacity="0.4"/>
+  </g>
+</svg>

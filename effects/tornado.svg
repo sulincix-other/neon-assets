@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35 -35 70 70" width="240" height="240">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="0;360" dur="3s" repeatCount="indefinite"/>
+    <path d="M-4,0 Q-4,-20 0,-28 Q4,-20 4,0 Q20,-4 28,0 Q20,4 4,0 Q4,20 0,28 Q-4,20 -4,0 Q-20,4 -28,0 Q-20,-4 -4,0Z" fill="none" stroke="#00ffff" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="0.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-3,0 Q-3,-14 0,-20 Q3,-14 3,0 Q14,-3 20,0 Q14,3 3,0 Q3,14 0,20 Q-3,14 -3,0 Q-14,3 -20,0 Q-14,-3 -3,0Z" fill="#00ffff" opacity="0.08"/>
+    <circle cx="0" cy="0" r="3" fill="#00ffff" filter="url(#glow)">
+      <animate attributeName="r" values="3;4;3" dur="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

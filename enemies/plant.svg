@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -35 60 70" width="240" height="240">
+  <defs>
+    <filter id="glowGreen" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowRed" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0;-2;0,0" dur="0.7s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="20" rx="14" ry="4" fill="rgba(0,0,0,0.4)"/>
+    <rect x="-7" y="8" width="14" height="14" rx="3" fill="none" stroke="#00ff44" stroke-width="2" filter="url(#glowGreen)"/>
+    <path d="M-14,2 Q-18,-14 -8,-20 Q0,-26 8,-20 Q18,-14 14,2" fill="none" stroke="#00ff44" stroke-width="2" filter="url(#glowGreen)">
+      <animate attributeName="d" values="M-14,2 Q-18,-14 -8,-20 Q0,-26 8,-20 Q18,-14 14,2;M-14,2 Q-16,-10 -6,-16 Q0,-22 6,-16 Q16,-10 14,2;M-14,2 Q-18,-14 -8,-20 Q0,-26 8,-20 Q18,-14 14,2" dur="0.7s" repeatCount="indefinite"/>
+    </path>
+    <ellipse cx="-5" cy="-4" rx="3" ry="4" fill="#003300" stroke="#00ff44" stroke-width="1"/>
+    <ellipse cx="5" cy="-4" rx="3" ry="4" fill="#003300" stroke="#00ff44" stroke-width="1"/>
+    <circle cx="-4" cy="-5" r="1.5" fill="#ff0044" filter="url(#glowRed)">
+      <animate attributeName="r" values="1.5;0.5;1.5" dur="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="6" cy="-5" r="1.5" fill="#ff0044" filter="url(#glowRed)">
+      <animate attributeName="r" values="1.5;0.5;1.5" dur="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-4,6 L0,10 L4,6" fill="none" stroke="#ff0044" stroke-width="1.2" filter="url(#glowRed)">
+      <animate attributeName="d" values="M-4,6 L0,10 L4,6;M-4,6 L0,14 L4,6;M-4,6 L0,10 L4,6" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

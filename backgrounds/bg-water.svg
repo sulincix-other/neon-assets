@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="640" height="480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000510"/><stop offset="30%" stop-color="#002050"/><stop offset="70%" stop-color="#003080"/><stop offset="100%" stop-color="#001040"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="glowBig"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="320" height="240" fill="url(#sky)"/>
+  <g filter="url(#glowBig)" opacity="0.4">
+    <circle cx="100" cy="140" r="45" fill="#0066ff">
+      <animate attributeName="r" values="45;53;45" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.25;0.4" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="150" r="40" fill="#0099ff">
+      <animate attributeName="r" values="40;48;40" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="120" r="30" fill="#00ccff">
+      <animate attributeName="r" values="30;37;30" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <path d="M0,240 Q40,180 100,200 Q160,170 220,190 Q280,175 320,210 L320,240 Z" fill="#002060" opacity="0.5">
+    <animate attributeName="d" values="M0,240 Q40,180 100,200 Q160,170 220,190 Q280,175 320,210 L320,240 Z;M0,240 Q40,183 100,202 Q160,173 220,193 Q280,178 320,212 L320,240 Z;M0,240 Q40,180 100,200 Q160,170 220,190 Q280,175 320,210 L320,240 Z" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0,240 Q60,200 120,215 Q180,195 240,210 Q280,200 320,225 L320,240 Z" fill="#001540"/>
+  <g fill="none" stroke="#0099ff" stroke-width="1" opacity="0.4">
+    <path d="M30,220 Q35,195 40,220"/><path d="M80,215 Q85,185 90,215"/>
+    <path d="M140,210 Q145,180 150,210"/><path d="M200,215 Q205,190 210,215"/>
+    <path d="M260,220 Q265,195 270,220"/>
+  </g>
+  <g filter="url(#glow)" opacity="0.5">
+    <ellipse cx="100" cy="160" rx="30" ry="10" fill="#0099ff">
+      <animate attributeName="rx" values="30;35;30" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="10;13;10" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="220" cy="165" rx="25" ry="8" fill="#0066ff">
+      <animate attributeName="rx" values="25;30;25" dur="3.5s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+  <g opacity="0.6">
+    <circle cx="30" cy="25" r="1.5" fill="#ffffff"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="100" cy="40" r="1" fill="#ffffff"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="20" r="1.8" fill="#ffffff"><animate attributeName="opacity" values="0.6;0.15;0.6" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="50" r="0.8" fill="#ffffff"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="60" cy="70" r="0.6" fill="#ffffff"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="55" r="1.2" fill="#ffffff"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="1.3s" repeatCount="indefinite"/></circle>
+    <circle cx="250" cy="45" r="0.8" fill="#ffffff"><animate attributeName="opacity" values="0.6;0.15;0.6" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="310" cy="80" r="0.5" fill="#ffffff"><animate attributeName="opacity" values="0.6;0;0.6" dur="3.5s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>

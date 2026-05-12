@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35 -35 70 70" width="240" height="240">
+  <defs>
+    <filter id="glowRed" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowOrange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="1.6s" repeatCount="indefinite"/>
+    <circle cx="10" cy="-8" r="26" fill="#ff3300" opacity="0.04">
+      <animate attributeName="r" values="26;32;26" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-18,-4 Q-24,-20 -12,-24 Q0,-28 12,-24" fill="none" stroke="#ff3300" stroke-width="2.5" filter="url(#glowRed)"/>
+    <path d="M12,-24 Q24,-20 20,0 Q22,12 16,18 Q10,24 0,26 Q-10,24 -16,18 Q-22,12 -18,-4" fill="none" stroke="#ff3300" stroke-width="2" filter="url(#glowRed)"/>
+    <path d="M12,-24 Q18,-26 22,-22 Q26,-18 24,-14" fill="none" stroke="#ff3300" stroke-width="2" filter="url(#glowRed)">
+      <animate attributeName="d" values="M12,-24 Q18,-26 22,-22 Q26,-18 24,-14;M12,-24 Q18,-28 22,-24 Q26,-20 24,-16;M12,-24 Q18,-26 22,-22 Q26,-18 24,-14" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <ellipse cx="-7" cy="-8" rx="5" ry="6" fill="#330000" stroke="#ff3300" stroke-width="1.2"/>
+    <ellipse cx="7" cy="-8" rx="5" ry="6" fill="#330000" stroke="#ff3300" stroke-width="1.2"/>
+    <circle cx="-6" cy="-9" r="2.5" fill="#ff6600" filter="url(#glowOrange)">
+      <animate attributeName="r" values="2.5;1;2.5" dur="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="8" cy="-9" r="2.5" fill="#ff6600" filter="url(#glowOrange)">
+      <animate attributeName="r" values="2.5;1;2.5" dur="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-3,-1 L0,3 L3,-1" fill="none" stroke="#ff6600" stroke-width="1"/>
+    <path d="M-10,6 Q-6,12 0,14 Q6,12 10,6" fill="none" stroke="#ff3300" stroke-width="1" opacity="0.5"/>
+    <path d="M-16,0 L-24,2" stroke="#ff3300" stroke-width="1.5" filter="url(#glowRed)"/>
+    <path d="M-16,4 L-24,6" stroke="#ff3300" stroke-width="1" opacity="0.6"/>
+  </g>
+</svg>

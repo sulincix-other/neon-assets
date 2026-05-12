@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -35 60 70" width="240" height="240">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0;-4;0,0" dur="1.6s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="6s" repeatCount="indefinite"/>
+      <path d="M0,-20 L16,-12 L16,4 Q16,16 0,22 Q-16,16 -16,4 L-16,-12 Z" fill="none" stroke="#00ffff" stroke-width="2" filter="url(#glow)"/>
+      <path d="M0,-14 L10,-8 L10,2 Q10,10 0,14 Q-10,10 -10,2 L-10,-8 Z" fill="#00ffff" opacity="0.1">
+        <animate attributeName="opacity" values="0.1;0.3;0.1" dur="1.5s" repeatCount="indefinite"/>
+      </path>
+      <line x1="0" y1="-6" x2="0" y2="6" stroke="#00ffff" stroke-width="1.5" filter="url(#glow)"/>
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="#00ffff" stroke-width="1.5" filter="url(#glow)"/>
+    </g>
+  </g>
+</svg>

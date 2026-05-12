@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -35 60 70" width="240" height="240">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-3;0,0" dur="1s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="20" rx="16" ry="3" fill="rgba(0,0,0,0.4)"/>
+    <path d="M-16,6 Q-20,-10 -8,-14 Q0,-20 8,-14 Q20,-10 16,6 Q18,18 12,22 Q8,28 0,26 Q-8,28 -12,22 Q-18,18 -16,6Z" fill="none" stroke="#00ff00" stroke-width="2" filter="url(#glow)">
+      <animate attributeName="d" values="M-16,6 Q-20,-10 -8,-14 Q0,-20 8,-14 Q20,-10 16,6 Q18,18 12,22 Q8,28 0,26 Q-8,28 -12,22 Q-18,18 -16,6Z;M-14,8 Q-18,-8 -6,-12 Q0,-18 6,-12 Q18,-8 14,8 Q16,20 10,24 Q6,30 0,28 Q-6,30 -10,24 Q-16,20 -14,8Z;M-16,6 Q-20,-10 -8,-14 Q0,-20 8,-14 Q20,-10 16,6 Q18,18 12,22 Q8,28 0,26 Q-8,28 -12,22 Q-18,18 -16,6Z" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-12,4 Q-14,-6 -6,-10 Q0,-14 6,-10 Q14,-6 12,4 Q14,14 8,18 Q4,22 0,20 Q-4,22 -8,18 Q-14,14 -12,4Z" fill="#00ff00" opacity="0.12" filter="url(#glow)"/>
+    <ellipse cx="-5" cy="-5" rx="3" ry="4" fill="#003300" stroke="#00ff00" stroke-width="1"/>
+    <ellipse cx="5" cy="-5" rx="3" ry="4" fill="#003300" stroke="#00ff00" stroke-width="1"/>
+    <circle cx="-4" cy="-6" r="1.5" fill="#00ff00" filter="url(#glow)">
+      <animate attributeName="cx" values="-4;-6;-4" dur="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="6" cy="-6" r="1.5" fill="#00ff00" filter="url(#glow)">
+      <animate attributeName="cx" values="6;4;6" dur="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-3,2 Q0,5 3,2" fill="none" stroke="#00ff00" stroke-width="0.8" opacity="0.7"/>
+    <circle cx="0" cy="-20" r="1.5" fill="#00ff00" filter="url(#glow)">
+      <animate attributeName="cy" values="-20;-23;-20" dur="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

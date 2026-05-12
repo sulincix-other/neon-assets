@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-25 -35 50 70" width="200" height="240">
+  <defs>
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowYellow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="1.7s" repeatCount="indefinite"/>
+    <line x1="0" y1="16" x2="0" y2="-10" stroke="#ff00ff" stroke-width="2" filter="url(#glowPink)"/>
+    <circle cx="0" cy="-14" r="8" fill="none" stroke="#00ffff" stroke-width="2" filter="url(#glowCyan)">
+      <animate attributeName="r" values="8;10;8" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="-14" r="5" fill="#00ffff" opacity="0.1">
+      <animate attributeName="r" values="5;7;5" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="-14" r="2.5" fill="#ffff00" filter="url(#glowYellow)">
+      <animate attributeName="r" values="2.5;3.5;2.5" dur="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="-6" y1="-14" x2="-12" y2="-10" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+    <line x1="6" y1="-14" x2="12" y2="-10" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="-22" x2="0" y2="-26" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+    <rect x="-1" y="12" width="3" height="8" rx="1" fill="none" stroke="#ff00ff" stroke-width="1"/>
+  </g>
+</svg>

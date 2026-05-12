@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="640" height="480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a20"/><stop offset="30%" stop-color="#2a1040"/><stop offset="60%" stop-color="#3a1550"/><stop offset="100%" stop-color="#1a0a30"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="glowBig"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="320" height="240" fill="url(#sky)"/>
+  <g filter="url(#glowBig)" opacity="0.5">
+    <circle cx="240" cy="100" r="60" fill="#ff6600">
+      <animate attributeName="r" values="60;70;60" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="120" r="50" fill="#ff0066">
+      <animate attributeName="r" values="50;58;50" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g filter="url(#glow)" opacity="0.6">
+    <circle cx="240" cy="100" r="35" fill="#ff8800"/>
+    <circle cx="240" cy="100" r="20" fill="#ffcc00"/>
+    <circle cx="240" cy="100" r="10" fill="#ffffff" opacity="0.5"/>
+  </g>
+  <path d="M0,240 Q80,200 160,220 Q240,210 320,230 L320,240 L0,240 Z" fill="#1a0520"/>
+  <path d="M0,240 Q100,215 160,230 Q220,220 320,235 L320,240 L0,240 Z" fill="#100518"/>
+  <g opacity="0.4">
+    <circle cx="30" cy="30" r="1" fill="#ffffff"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="20" r="1.5" fill="#ffffff"><animate attributeName="opacity" values="0.4;0.05;0.4" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="40" r="0.8" fill="#ffffff"><animate attributeName="opacity" values="0.4;0.15;0.4" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="25" r="1.2" fill="#ffffff"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="1.8s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>

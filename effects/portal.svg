@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 80 80" width="240" height="240">
+  <defs>
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b1"/><feGaussianBlur stdDeviation="8" result="b2"/><feGaussianBlur stdDeviation="16" result="b3"/><feMerge><feMergeNode in="b3"/><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowPurple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <ellipse cx="0" cy="0" rx="28" ry="12" fill="none" stroke="#ff00ff" stroke-width="2" filter="url(#glowPink)">
+      <animate attributeName="rx" values="28;34;28" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="12;15;12" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="stroke" values="#ff00ff;#00ffff;#9900ff;#ff00ff" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="0" cy="0" rx="22" ry="8" fill="#ff00ff" opacity="0.06" filter="url(#glowPink)">
+      <animate attributeName="rx" values="22;28;22" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="8;10;8" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.06;0.18;0.06" dur="1.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="0" cy="0" rx="14" ry="5" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.5" filter="url(#glowCyan)">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="rx" values="14;18;14" dur="1.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="0" cy="0" rx="8" ry="3" fill="none" stroke="#9900ff" stroke-width="0.8" opacity="0.4" filter="url(#glowPurple)">
+      <animateTransform attributeName="transform" type="rotate" values="360;0" dur="2.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <circle cx="0" cy="0" r="2" fill="#ffffff" opacity="0.4">
+      <animate attributeName="r" values="2;3;2" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

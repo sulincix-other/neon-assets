@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-25 -25 50 50" width="160" height="160">
+  <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <g>
+    <path d="M-4,0 Q-4,-16 0,-22 Q4,-16 4,0 Q16,-4 22,0 Q16,4 4,0 Q4,16 0,22 Q-4,16 -4,0 Q-16,4 -22,0 Q-16,-4 -4,0Z" fill="none" stroke="#ff6600" stroke-width="1.5" filter="url(#g)">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="0.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-3,0 Q-3,-12 0,-16 Q3,-12 3,0 Q12,-3 16,0 Q12,3 3,0 Q3,12 0,16 Q-3,12 -3,0 Q-12,3 -16,0 Q-12,-3 -3,0Z" fill="#ff6600" opacity="0.06"/>
+    <circle cx="0" cy="0" r="2" fill="#ffff00" opacity="0.5">
+      <animate attributeName="r" values="2;3;2" dur="0.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

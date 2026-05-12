@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35 -25 70 50" width="240" height="240">
+  <defs>
+    <filter id="glowOrange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <rect x="-20" y="-4" width="30" height="8" rx="2" fill="none" stroke="#ff6600" stroke-width="2" filter="url(#glowOrange)"/>
+    <path d="M-20,-12 Q-28,0 -20,12" fill="none" stroke="#ff6600" stroke-width="2" stroke-linecap="round" filter="url(#glowOrange)"/>
+    <line x1="-20" y1="-12" x2="-20" y2="12" stroke="#ff6600" stroke-width="1.5" filter="url(#glowOrange)">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="0.5s" repeatCount="indefinite"/>
+    </line>
+    <rect x="10" y="-3" width="14" height="6" rx="1" fill="none" stroke="#ff6600" stroke-width="1.5" filter="url(#glowOrange)"/>
+    <rect x="-22" y="-2" width="4" height="4" rx="0.5" fill="#ff6600" opacity="0.3"/>
+    <line x1="24" y1="0" x2="30" y2="0" stroke="#00ffff" stroke-width="1.2" filter="url(#glowCyan)">
+      <animate attributeName="opacity" values="1;0.4;1" dur="0.3s" repeatCount="indefinite"/>
+    </line>
+    <polygon points="30,0 26,-3 26,3" fill="none" stroke="#00ffff" stroke-width="1" filter="url(#glowCyan)"/>
+  </g>
+</svg>

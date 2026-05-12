@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="640" height="480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050510"/><stop offset="30%" stop-color="#0a0a30"/><stop offset="100%" stop-color="#1a0a40"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="glowBig"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="320" height="240" fill="url(#sky)"/>
+  <g filter="url(#glowBig)" opacity="0.35">
+    <circle cx="80" cy="150" r="40" fill="#9900ff">
+      <animate attributeName="r" values="40;48;40" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.35;0.2;0.35" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="240" cy="130" r="45" fill="#0066ff">
+      <animate attributeName="r" values="45;53;45" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="140" r="30" fill="#ff00ff">
+      <animate attributeName="r" values="30;37;30" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <path d="M0,240 L0,170 Q40,120 80,150 Q120,110 160,130 Q200,100 240,120 Q280,105 320,140 L320,240 Z" fill="#150030" opacity="0.5">
+    <animate attributeName="d" values="M0,240 L0,170 Q40,120 80,150 Q120,110 160,130 Q200,100 240,120 Q280,105 320,140 L320,240 Z;M0,240 L0,172 Q40,123 80,152 Q120,113 160,132 Q200,103 240,122 Q280,108 320,142 L320,240 Z;M0,240 L0,170 Q40,120 80,150 Q120,110 160,130 Q200,100 240,120 Q280,105 320,140 L320,240 Z" dur="8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0,240 L0,190 Q50,160 100,180 Q150,150 200,170 Q250,155 320,180 L320,240 Z" fill="#0a0020"/>
+  <g fill="none" stroke="#9900ff" stroke-width="1" opacity="0.35">
+    <path d="M20,210 Q25,185 30,210"/><path d="M70,200 Q75,175 80,200"/>
+    <path d="M130,195 Q135,170 140,195"/><path d="M190,200 Q195,180 200,200"/>
+    <path d="M250,205 Q255,185 260,205"/><path d="M300,210 Q305,190 310,210"/>
+  </g>
+  <g opacity="0.5">
+    <circle cx="30" cy="25" r="1.2" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="100" cy="40" r="0.8" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.15;0.5" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="20" r="1.5" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="50" r="0.6" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.2;0.5" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="60" cy="70" r="0.5" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="55" r="1" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.15;0.5" dur="1.3s" repeatCount="indefinite"/></circle>
+  </g>
+  <g filter="url(#glow)" opacity="0.5">
+    <circle cx="80" cy="150" r="6" fill="#cc66ff"><animate attributeName="opacity" values="0.5;0.15;0.5" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="240" cy="140" r="5" fill="#6699ff"><animate attributeName="opacity" values="0.5;0.2;0.5" dur="2s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="640" height="480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050510"/><stop offset="30%" stop-color="#101020"/><stop offset="100%" stop-color="#202540"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+  <rect width="320" height="240" fill="url(#sky)"/>
+  <g opacity="0.5">
+    <circle cx="30" cy="20" r="1.5" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="100" cy="40" r="1" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.15;0.5" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="25" r="1.8" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="50" r="0.8" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.2;0.5" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="60" cy="70" r="0.6" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="55" r="1.2" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.15;0.5" dur="1.3s" repeatCount="indefinite"/></circle>
+    <circle cx="250" cy="65" r="0.5" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.05;0.5" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="35" r="0.7" fill="#ffffff"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.8s" repeatCount="indefinite"/></circle>
+  </g>
+  <path d="M0,240 Q40,160 100,190 Q160,170 220,195 Q280,185 320,210 L320,240 Z" fill="#d0d8e8" opacity="0.3"/>
+  <path d="M0,240 Q60,185 120,205 Q180,190 240,205 Q280,200 320,220 L320,240 Z" fill="#e0e8f0" opacity="0.2"/>
+  <path d="M0,240 Q80,210 160,225 Q240,215 320,235 L320,240 Z" fill="#f0f4f8" opacity="0.12"/>
+  <g fill="none" stroke="#ffffff" stroke-width="1" opacity="0.15">
+    <path d="M30,220 Q35,195 40,220"/><path d="M80,215 Q85,190 90,215"/>
+    <path d="M140,210 Q145,185 150,210"/><path d="M200,215 Q205,195 210,215"/>
+    <path d="M260,220 Q265,200 270,220"/>
+  </g>
+  <g filter="url(#glow)" opacity="0.2">
+    <circle cx="160" cy="80" r="20" fill="#00ccff"/>
+  </g>
+</svg>

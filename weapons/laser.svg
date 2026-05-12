@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -30 80 60" width="240" height="240">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <rect x="-35" y="-2" width="70" height="4" rx="2" fill="#ff00ff" opacity="0.12" filter="url(#glow)">
+      <animate attributeName="width" values="70;80;70" dur="0.25s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="-35;-40;-35" dur="0.25s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-32" y="-1" width="64" height="2" rx="1" fill="#ff00ff" opacity="0.35" filter="url(#glow)">
+      <animate attributeName="width" values="64;74;64" dur="0.25s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="-32;-37;-32" dur="0.25s" repeatCount="indefinite"/>
+    </rect>
+    <line x1="-30" y1="0" x2="30" y2="0" stroke="#ffffff" stroke-width="0.8" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.1s" repeatCount="indefinite"/>
+    </line>
+    <circle cx="-35" cy="0" r="2.5" fill="#ff00ff" filter="url(#glow)">
+      <animate attributeName="cx" values="-35;-40;-35" dur="0.25s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="35" cy="0" r="2.5" fill="#ff00ff" filter="url(#glow)">
+      <animate attributeName="cx" values="35;40;35" dur="0.25s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

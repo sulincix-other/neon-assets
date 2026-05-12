@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 56" width="560" height="112">
+  <defs><filter id="g"><feGaussianBlur stdDeviation="3"/></filter></defs>
+  <rect x="0" y="0" width="280" height="56" rx="6" fill="#050520" stroke="#9900ff" stroke-width="2.5" filter="url(#g)"/>
+  <rect x="4" y="4" width="272" height="48" rx="4" fill="none" stroke="#9900ff" stroke-width="0.5" opacity="0.4"/>
+  <line x1="16" y1="12" x2="16" y2="44" stroke="#ff00ff" stroke-width="2" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <rect x="4" y="4" width="272" height="48" rx="4" fill="#9900ff" opacity="0.03"/>
+</svg>

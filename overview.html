@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Game Assets</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a1a; color: #fff; font-family: monospace; padding: 20px; }
+  h1 { text-align: center; color: #00ffff; font-size: 28px; margin-bottom: 6px; text-shadow: 0 0 20px #00ffff88; }
+  h2 { color: #ff00ff; margin: 20px 0 10px; font-size: 14px; border-bottom: 1px solid #ff00ff44; padding-bottom: 4px; text-transform: uppercase; letter-spacing: 2px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
+  .card { background: #0d0d2a; border: 1px solid #222; border-radius: 6px; padding: 6px; text-align: center; transition: 0.3s; }
+  .card:hover { border-color: #ff00ff; box-shadow: 0 0 15px #ff00ff44; }
+  .card svg, .card object { width: 100%; height: auto; display: block; min-height: 50px; }
+  .card .name { font-size: 9px; color: #888; margin-top: 3px; }
+  .card .cat { font-size: 7px; color: #555; text-transform: uppercase; }
+  .counter { text-align: center; color: #666; margin-bottom: 12px; font-size: 12px; }
+  .sect { background: #0d0d2a; border: 1px solid #00ffff22; border-radius: 8px; padding: 10px; margin-bottom: 12px; }
+  .sect h2 { margin-top: 0; }
+</style>
+</head>
+<body>
+<h1>⬡ NEON GAME ASSETS</h1>
+<p class="counter" id="counter"></p>
+
+<div class="sect"><h2>━ Characters ━</h2><div class="grid" data-folder="characters"></div></div>
+<div class="sect"><h2>━ Enemies ━</h2><div class="grid" data-folder="enemies"></div></div>
+<div class="sect"><h2>━ Collectibles ━</h2><div class="grid" data-folder="collectibles"></div></div>
+<div class="sect"><h2>━ Power-ups ━</h2><div class="grid" data-folder="powerups"></div></div>
+<div class="sect"><h2>━ Weapons ━</h2><div class="grid" data-folder="weapons"></div></div>
+<div class="sect"><h2>━ Bullets ━</h2><div class="grid" data-folder="bullets"></div></div>
+<div class="sect"><h2>━ Effects ━</h2><div class="grid" data-folder="effects"></div></div>
+<div class="sect"><h2>━ Backgrounds ━</h2><div class="grid" data-folder="backgrounds"></div></div>
+<div class="sect"><h2>━ UI Elements ━</h2><div class="grid" data-folder="ui"></div></div>
+
+<script>
+const files = {
+  characters:['player-ninja','player-mage','player-knight','player-archer','player-rogue','player-paladin'],
+  enemies:['bat','bee','dragon','eye','ghost','goblin','golem','octopus','plant','robot','skull','slime','snake','spider','worm'],
+  collectibles:['ankh','bone','book','claw','coin','crystal','egg','feather','gem','heart','key','mushroom','pearl','ring','scroll','skull-key','star','torch'],
+  powerups:['amulet','bomb','boots','chest','crown','gem-blue','gem-red','helmet','hourglass','lightning','map','potion','ring','shield','star-small','wings'],
+  weapons:['arrow','axe','bow','claw-weapon','crossbow','dagger','fireball','hammer','laser','mace','scythe','shuriken','spear','staff','sword','trident','whip'],
+  bullets:['bullet-arrow','bullet-cannon','bullet-fire','bullet-heart','bullet-ice','bullet-lightning','bullet-magic','bullet-orb','bullet-pebble','bullet-poison','bullet-skull','bullet-slow','bullet-star','bullet-void'],
+  effects:['bubble','electricity-arc','explosion','fire','flag','forcefield','heal','ice','lightning-strike','poison','portal','pulse','shield-hit','smoke','sparkle','spike','star-burst','tornado'],
+  backgrounds:['bg-castle','bg-cave','bg-desert','bg-forest','bg-grid','bg-hell','bg-lava','bg-mountains','bg-neon-city','bg-snow','bg-space','bg-sunset','bg-temple','bg-water'],
+  ui:['badge','button','button-hover','button-large','button-pressed','button-small','checkbox','checkbox-checked','crosshair','dpad','exp-bar','exp-bar-fill','frame','health-bar','health-bar-fill','icon-coin','icon-heart','icon-home','icon-key','icon-pause','icon-play','icon-settings','icon-star','input','joystick','mana-bar','mana-bar-fill','minimap','panel','progress-ring','radio','radio-checked','slider','slider-thumb','toggle','toggle-on','tooltip']
+};
+let total = 0;
+Object.entries(files).forEach(([cat, list]) => {
+  const container = document.querySelector(`[data-folder="${cat}"]`);
+  if (!container) return;
+  total += list.length;
+  list.forEach(name => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `<object data="../${cat}/${name}.svg" type="image/svg+xml" style="width:100%;min-height:50px;">${name}</object><div class="name">${name.replace(/-/g,' ')}</div><div class="cat">${cat}</div>`;
+    container.appendChild(card);
+  });
+});
+document.getElementById('counter').textContent = total + ' total SVG assets — neon glow, transparent, animated';
+</script>
+</body>
+</html>

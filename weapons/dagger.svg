@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-25 -35 50 70" width="200" height="240">
+  <defs>
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="4" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="0;-15;5;0" dur="1.5s" repeatCount="indefinite"/>
+    <path d="M0,-32 L-2,-4 L-1,4 L1,4 L2,-4 Z" fill="none" stroke="#00ffff" stroke-width="1.5" filter="url(#glowCyan)"/>
+    <line x1="0" y1="-28" x2="0" y2="-2" stroke="#ffffff" stroke-width="0.5" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="0.5s" repeatCount="indefinite"/>
+    </line>
+    <rect x="-5" y="4" width="10" height="3" rx="1" fill="#ff00ff" filter="url(#glowPink)"/>
+    <rect x="-2" y="7" width="4" height="8" rx="1.5" fill="none" stroke="#ff00ff" stroke-width="1"/>  <circle cx="0" cy="17" r="2" fill="none" stroke="#ff00ff" stroke-width="1"/>
+  </g>
+</svg>

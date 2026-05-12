@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -30 60 60" width="160" height="160">
+  <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <g>
+    <circle cx="0" cy="0" r="18" fill="#00ffff" opacity="0.08">
+      <animate attributeName="r" values="18;24;18" dur="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.08;0.2;0.08" dur="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-4,-18 L-2,-6 L-12,-12 L-4,-2 L-10,8 L0,2 L10,8 L4,-2 L12,-12 L2,-6 Z" fill="none" stroke="#00ffff" stroke-width="2" filter="url(#g)">
+      <animate attributeName="opacity" values="1;0.3;1" dur="0.2s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="0" cy="0" r="4" fill="#00ffff" opacity="0.3" filter="url(#g)">
+      <animate attributeName="r" values="4;6;4" dur="0.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 32" width="480" height="64">
+  <defs><filter id="g"><feGaussianBlur stdDeviation="3"/></filter></defs>
+  <rect x="0" y="0" width="240" height="32" rx="6" fill="#0a0a2e" stroke="#00ccff" stroke-width="2" filter="url(#g)"/>
+  <rect x="4" y="4" width="232" height="24" rx="4" fill="#00ccff" opacity="0.85" filter="url(#g)">
+    <animate attributeName="opacity" values="0.85;0.55;0.85" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="4" y="4" width="232" height="24" rx="4" fill="#00ccff" opacity="0.2"/>
+  <rect x="4" y="4" width="232" height="24" rx="4" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.15"/>
+  <rect x="4" y="4" width="80" height="24" rx="4" fill="#ffffff" opacity="0.08">
+    <animate attributeName="x" values="4;156;4" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>

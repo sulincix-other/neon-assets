@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -30 60 60" width="200" height="200">
+  <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b1"/><feGaussianBlur stdDeviation="6" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="0.7s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="6" rx="10" ry="8" fill="none" stroke="#ffff00" stroke-width="2" filter="url(#g)"/>
+    <ellipse cx="0" cy="-4" rx="7" ry="6" fill="none" stroke="#ffff00" stroke-width="2" filter="url(#g)"/>
+    <circle cx="0" cy="-4" r="4" fill="#ffff00" opacity="0.08"/>
+    <line x1="-16" y1="-4" x2="-8" y2="-2" stroke="#ffff00" stroke-width="1.5" filter="url(#g)"/>
+    <line x1="16" y1="-4" x2="8" y2="-2" stroke="#ffff00" stroke-width="1.5" filter="url(#g)"/>
+    <circle cx="-12" cy="-6" r="1.5" fill="#ff6600" filter="url(#g)">
+      <animate attributeName="r" values="1.5;0.5;1.5" dur="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="12" cy="-6" r="1.5" fill="#ff6600" filter="url(#g)">
+      <animate attributeName="r" values="1.5;0.5;1.5" dur="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <ellipse cx="-4" cy="-6" rx="2" ry="2.5" fill="#333300" stroke="#ffff00" stroke-width="0.8"/>
+    <ellipse cx="4" cy="-6" rx="2" ry="2.5" fill="#333300" stroke="#ffff00" stroke-width="0.8"/>
+    <circle cx="-3.5" cy="-6.5" r="1" fill="#ffff00" filter="url(#g)"/>
+    <circle cx="4.5" cy="-6.5" r="1" fill="#ffff00" filter="url(#g)"/>
+    <path d="M-12,18 L-8,14" stroke="#ffff00" stroke-width="0.8" opacity="0.4"/>
+    <path d="M12,18 L8,14" stroke="#ffff00" stroke-width="0.8" opacity="0.4"/>
+  </g>
+</svg>
