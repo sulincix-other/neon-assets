@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 48 48" width="48" height="48">
   <defs><filter id="g" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-  <rect x="0" y="0" width="48" height="48" fill="#0a0a16"/>
-  <rect x="0" y="0" width="48" height="48" fill="#0e0e20" opacity="0.7"/>
+  <rect x="0" y="0" width="48" height="48" fill="#0e1a30"/>
+  <rect x="0" y="0" width="48" height="48" fill="#1a2a44" opacity="0.65"/>
   <polygon points="0,36 6,30 12,36 18,28 24,34 30,26 36,32 42,24 48,30 48,48 0,48" fill="#1a2a4a33" stroke="#3a8acc" stroke-width="0.6" opacity="0.5" filter="url(#g)">
     <animate attributeName="points" values="0,36 6,30 12,36 18,28 24,34 30,26 36,32 42,24 48,30 48,48 0,48;0,36 6,42 12,36 18,44 24,34 30,42 36,32 42,40 48,30 48,48 0,48;0,36 6,30 12,36 18,28 24,34 30,26 36,32 42,24 48,30 48,48 0,48" dur="2s" repeatCount="indefinite"/>
   </polygon>

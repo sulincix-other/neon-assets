@@ -1,38 +1,234 @@
-<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 48 48" width="48" height="48">
-  <defs><filter id="g" filterUnits="userSpaceOnUse" x="-500" y="-500" width="2000" height="2000"><feGaussianBlur stdDeviation="2" result="b1"/><feGaussianBlur stdDeviation="5" result="b2"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-  <rect x="0" y="0" width="48" height="48" fill="#1a0a2e"/>
-  <rect x="0" y="0" width="48" height="48" fill="#2a1040" opacity="0.6"/>
-  <circle cx="8" cy="6" r="1" fill="#ff44ff" opacity="0.5" filter="url(#g)">
-    <animate attributeName="opacity" values="0.5;0.15;0.5" dur="0.8s" repeatCount="indefinite"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   overflow="visible"
+   viewBox="0 0 48 48"
+   width="48"
+   height="48"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="tile-neon-platform-fill.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="14.75"
+     inkscape:cx="24.033898"
+     inkscape:cy="24"
+     inkscape:window-width="1920"
+     inkscape:window-height="909"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg15" />
+  <defs
+     id="defs4">
+    <filter
+       id="g"
+       filterUnits="userSpaceOnUse"
+       x="-500"
+       y="-500"
+       width="2000"
+       height="2000">
+      <feGaussianBlur
+         stdDeviation="2"
+         result="b1"
+         id="feGaussianBlur1" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="b2"
+         id="feGaussianBlur2" />
+      <feMerge
+         id="feMerge4">
+        <feMergeNode
+           in="b2"
+           id="feMergeNode2" />
+        <feMergeNode
+           in="b1"
+           id="feMergeNode3" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode4" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect
+     x="0"
+     y="0"
+     width="48"
+     height="48"
+     fill="#1a0a2e"
+     id="rect4" />
+  <rect
+     x="0"
+     y="0"
+     width="48"
+     height="48"
+     fill="#2a1040"
+     opacity="0.6"
+     id="rect5"
+     style="fill:#1a0a2e;fill-opacity:1" />
+  <circle
+     cx="8"
+     cy="6"
+     r="1"
+     fill="#ff44ff"
+     opacity="0.5"
+     filter="url(#g)"
+     id="circle5">
+    <animate
+       attributeName="opacity"
+       values="0.5;0.15;0.5"
+       dur="0.8s"
+       repeatCount="indefinite" />
   </circle>
-  <circle cx="24" cy="10" r="0.8" fill="#ff88ff" opacity="0.4" filter="url(#g)">
-    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="1.2s" repeatCount="indefinite"/>
+  <circle
+     cx="24"
+     cy="10"
+     r="0.8"
+     fill="#ff88ff"
+     opacity="0.4"
+     filter="url(#g)"
+     id="circle6">
+    <animate
+       attributeName="opacity"
+       values="0.4;0.1;0.4"
+       dur="1.2s"
+       repeatCount="indefinite" />
   </circle>
-  <circle cx="40" cy="4" r="0.9" fill="#ff00ff" opacity="0.45" filter="url(#g)">
-    <animate attributeName="opacity" values="0.45;0.1;0.45" dur="1s" repeatCount="indefinite"/>
+  <circle
+     cx="40"
+     cy="4"
+     r="0.9"
+     fill="#ff00ff"
+     opacity="0.45"
+     filter="url(#g)"
+     id="circle7">
+    <animate
+       attributeName="opacity"
+       values="0.45;0.1;0.45"
+       dur="1s"
+       repeatCount="indefinite" />
   </circle>
-  <circle cx="6" cy="20" r="0.7" fill="#ff88ff" opacity="0.4" filter="url(#g)">
-    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="1.4s" repeatCount="indefinite"/>
+  <circle
+     cx="6"
+     cy="20"
+     r="0.7"
+     fill="#ff88ff"
+     opacity="0.4"
+     filter="url(#g)"
+     id="circle8">
+    <animate
+       attributeName="opacity"
+       values="0.4;0.1;0.4"
+       dur="1.4s"
+       repeatCount="indefinite" />
   </circle>
-  <circle cx="30" cy="18" r="0.6" fill="#ff44ff" opacity="0.35" filter="url(#g)">
-    <animate attributeName="opacity" values="0.35;0.1;0.35" dur="0.9s" repeatCount="indefinite"/>
+  <circle
+     cx="30"
+     cy="18"
+     r="0.6"
+     fill="#ff44ff"
+     opacity="0.35"
+     filter="url(#g)"
+     id="circle9">
+    <animate
+       attributeName="opacity"
+       values="0.35;0.1;0.35"
+       dur="0.9s"
+       repeatCount="indefinite" />
   </circle>
-  <circle cx="44" cy="22" r="0.8" fill="#ff00ff" opacity="0.35" filter="url(#g)">
-    <animate attributeName="opacity" values="0.35;0.1;0.35" dur="1.3s" repeatCount="indefinite"/>
+  <circle
+     cx="44"
+     cy="22"
+     r="0.8"
+     fill="#ff00ff"
+     opacity="0.35"
+     filter="url(#g)"
+     id="circle10">
+    <animate
+       attributeName="opacity"
+       values="0.35;0.1;0.35"
+       dur="1.3s"
+       repeatCount="indefinite" />
   </circle>
-  <circle cx="12" cy="32" r="0.7" fill="#ff88ff" opacity="0.3" filter="url(#g)">
-    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="1.1s" repeatCount="indefinite"/>
+  <circle
+     cx="12"
+     cy="32"
+     r="0.7"
+     fill="#ff88ff"
+     opacity="0.3"
+     filter="url(#g)"
+     id="circle11">
+    <animate
+       attributeName="opacity"
+       values="0.3;0.1;0.3"
+       dur="1.1s"
+       repeatCount="indefinite" />
   </circle>
-  <circle cx="36" cy="30" r="0.5" fill="#ff44ff" opacity="0.3" filter="url(#g)">
-    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="1.5s" repeatCount="indefinite"/>
+  <circle
+     cx="36"
+     cy="30"
+     r="0.5"
+     fill="#ff44ff"
+     opacity="0.3"
+     filter="url(#g)"
+     id="circle12">
+    <animate
+       attributeName="opacity"
+       values="0.3;0.1;0.3"
+       dur="1.5s"
+       repeatCount="indefinite" />
   </circle>
-  <circle cx="8" cy="42" r="0.8" fill="#ff00ff" opacity="0.3" filter="url(#g)">
-    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="0.7s" repeatCount="indefinite"/>
+  <circle
+     cx="8"
+     cy="42"
+     r="0.8"
+     fill="#ff00ff"
+     opacity="0.3"
+     filter="url(#g)"
+     id="circle13">
+    <animate
+       attributeName="opacity"
+       values="0.3;0.1;0.3"
+       dur="0.7s"
+       repeatCount="indefinite" />
   </circle>
-  <circle cx="24" cy="38" r="0.6" fill="#ff88ff" opacity="0.25" filter="url(#g)">
-    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="1.6s" repeatCount="indefinite"/>
+  <circle
+     cx="24"
+     cy="38"
+     r="0.6"
+     fill="#ff88ff"
+     opacity="0.25"
+     filter="url(#g)"
+     id="circle14">
+    <animate
+       attributeName="opacity"
+       values="0.25;0.1;0.25"
+       dur="1.6s"
+       repeatCount="indefinite" />
   </circle>
-  <circle cx="40" cy="44" r="0.7" fill="#ff44ff" opacity="0.25" filter="url(#g)">
-    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="1s" repeatCount="indefinite"/>
+  <circle
+     cx="40"
+     cy="44"
+     r="0.7"
+     fill="#ff44ff"
+     opacity="0.25"
+     filter="url(#g)"
+     id="circle15">
+    <animate
+       attributeName="opacity"
+       values="0.25;0.1;0.25"
+       dur="1s"
+       repeatCount="indefinite" />
   </circle>
 </svg>
