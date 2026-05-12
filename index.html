@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Game Assets</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a1a; color: #ccc; font-family: monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+  .container { max-width: 640px; text-align: center; }
+  h1 { font-size: 36px; color: #00ffff; text-shadow: 0 0 30px #00ffff88; margin-bottom: 8px; letter-spacing: 4px; }
+  .sub { color: #ff00ff; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 30px; text-shadow: 0 0 15px #ff00ff66; }
+  p { font-size: 13px; line-height: 1.7; color: #888; margin-bottom: 12px; }
+  .stats { display: flex; gap: 30px; justify-content: center; margin: 24px 0; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat-num { font-size: 32px; color: #ffff00; text-shadow: 0 0 20px #ffff0066; }
+  .stat-label { font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+  .btn { display: inline-block; padding: 14px 40px; background: transparent; border: 1px solid #00ffff44; color: #00ffff; text-decoration: none; font-family: monospace; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; border-radius: 4px; transition: 0.3s; margin-top: 10px; }
+  .btn:hover { background: #00ffff11; border-color: #00ffff; box-shadow: 0 0 25px #00ffff44; }
+  .cats { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 16px 0; }
+  .cat-tag { padding: 4px 12px; border: 1px solid #333; border-radius: 3px; font-size: 10px; color: #ff00ff; text-transform: uppercase; letter-spacing: 1px; }
+  .footer { margin-top: 30px; font-size: 10px; color: #444; }
+  .footer a { color: #666; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>⬡ NEON</h1>
+  <div class="sub">2D SVG Game Assets</div>
+  <p>A comprehensive library of neon-glowing, animated SVG game assets with transparent backgrounds. 155+ assets across 9 categories — characters, enemies, collectibles, power-ups, weapons, bullets, effects, backgrounds, and UI elements.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-num">155</div><div class="stat-label">Assets</div></div>
+    <div class="stat"><div class="stat-num">9</div><div class="stat-label">Categories</div></div>
+    <div class="stat"><div class="stat-num">100%</div><div class="stat-label">SVG</div></div>
+  </div>
+
+  <div class="cats">
+    <span class="cat-tag">Characters</span>
+    <span class="cat-tag">Enemies</span>
+    <span class="cat-tag">Collectibles</span>
+    <span class="cat-tag">Power-ups</span>
+    <span class="cat-tag">Weapons</span>
+    <span class="cat-tag">Bullets</span>
+    <span class="cat-tag">Effects</span>
+    <span class="cat-tag">Backgrounds</span>
+    <span class="cat-tag">UI</span>
+  </div>
+
+  <a class="btn" href="assets/overview.html">Browse Gallery</a>
+
+  <div class="footer">
+    <p>All assets are standalone SVGs with neon glow filters, SMIL animations, and transparent backgrounds. No external dependencies.</p>
+  </div>
+</div>
+</body>
+</html>

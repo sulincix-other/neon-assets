@@ -54,7 +54,7 @@ Object.entries(files).forEach(([cat, list]) => {
   list.forEach(name => {
     const card = document.createElement('div');
     card.className = 'card';
-    card.innerHTML = `<object data="../${cat}/${name}.svg" type="image/svg+xml" style="width:100%;min-height:50px;">${name}</object><div class="name">${name.replace(/-/g,' ')}</div><div class="cat">${cat}</div>`;
+    card.innerHTML = `<object data="${cat}/${name}.svg" type="image/svg+xml" style="width:100%;min-height:50px;">${name}</object><div class="name">${name.replace(/-/g,' ')}</div><div class="cat">${cat}</div>`;
     container.appendChild(card);
   });
 });
