@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow-strong"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <circle cx="24" cy="24" r="18" fill="#ffdd0044" stroke="#ffdd00" stroke-width="1.5" filter="url(#glow-strong)">
+    <animate attributeName="r" values="18;20;18" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="24" cy="24" r="12" fill="#ffdd0066" stroke="#ffdd00" stroke-width="1" filter="url(#glow)">
+    <animate attributeName="r" values="12;14;12" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="24" cy="24" r="6" fill="#ffdd0088" stroke="#ffffff" stroke-width="1" filter="url(#glow)">
+    <animate attributeName="r" values="6;7;6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M24,8 L24,12" stroke="#ffdd00" stroke-width="2" filter="url(#glow)">
+    <animate attributeName="d" values="M24,8 L24,12;M24,6 L24,10;M24,8 L24,12" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M24,36 L24,40" stroke="#ffdd00" stroke-width="2" filter="url(#glow)">
+    <animate attributeName="d" values="M24,36 L24,40;M24,38 L24,42;M24,36 L24,40" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M8,24 L12,24" stroke="#ffdd00" stroke-width="2" filter="url(#glow)">
+    <animate attributeName="d" values="M8,24 L12,24;M6,24 L10,24;M8,24 L12,24" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M36,24 L40,24" stroke="#ffdd00" stroke-width="2" filter="url(#glow)">
+    <animate attributeName="d" values="M36,24 L40,24;M38,24 L42,24;M36,24 L40,24" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M14,14 L16,16" stroke="#ffdd00" stroke-width="1.5" filter="url(#glow)">
+    <animate attributeName="d" values="M14,14 L16,16;M12,12 L14,14;M14,14 L16,16" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M34,14 L32,16" stroke="#ffdd00" stroke-width="1.5" filter="url(#glow)">
+    <animate attributeName="d" values="M34,14 L32,16;M36,12 L34,14;M34,14 L32,16" dur="2.5s" begin="1.2s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="24" cy="24" r="2" fill="#ffffff" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+  </circle>
+</svg>

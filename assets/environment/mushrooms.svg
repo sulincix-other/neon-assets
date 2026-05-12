@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <ellipse cx="24" cy="36" rx="8" ry="3" fill="#00aa4411" stroke="#00ff66" stroke-width="0.3" opacity="0.15"/>
+  <ellipse cx="16" cy="34" rx="5" ry="3" fill="#aa44ff44" stroke="#bb66ff" stroke-width="0.8" filter="url(#glow)"/>
+  <rect x="15" y="28" width="2" height="6" fill="#448844"/>
+  <ellipse cx="16" cy="26" rx="3" ry="2" fill="#cc66ff66" stroke="#bb66ff" stroke-width="0.5" filter="url(#glow)"/>
+  <circle cx="14" cy="25" r="0.8" fill="#ff88ff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="18" cy="25" r="0.8" fill="#ff88ff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+  </circle>
+  <ellipse cx="28" cy="36" rx="4" ry="2.5" fill="#ff44aa44" stroke="#ff66cc" stroke-width="0.8" filter="url(#glow)"/>
+  <rect x="27" y="30" width="2" height="6" fill="#448844"/>
+  <ellipse cx="28" cy="28" rx="2.5" ry="1.5" fill="#ff66cc66" stroke="#ff66cc" stroke-width="0.5" filter="url(#glow)"/>
+  <circle cx="27" cy="27.5" r="0.6" fill="#ffaadd" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="29" cy="27.5" r="0.6" fill="#ffaadd" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <ellipse cx="34" cy="34" rx="3.5" ry="2" fill="#44ffaa44" stroke="#44ffaa" stroke-width="0.8" filter="url(#glow)"/>
+  <rect x="33" y="28" width="2" height="6" fill="#448844"/>
+  <ellipse cx="34" cy="26" rx="2" ry="1.5" fill="#66ffcc66" stroke="#44ffaa" stroke-width="0.5" filter="url(#glow)"/>
+  <circle cx="34" cy="25.5" r="0.5" fill="#aaffdd" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

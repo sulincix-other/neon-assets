@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <ellipse cx="24" cy="40" rx="14" ry="4" fill="#1a1a2e33" stroke="#444" stroke-width="0.3"/>
+  <circle cx="24" cy="12" r="8" fill="#444" stroke="#666" stroke-width="0.5"/>
+  <path d="M16,12 Q18,4 24,4 Q30,4 32,12" fill="none" stroke="#888" stroke-width="1"/>
+  <ellipse cx="24" cy="13" rx="7" ry="2" fill="#555" stroke="#777" stroke-width="0.3"/>
+  <path d="M12,32 L16,14 L18,16" fill="none" stroke="#888" stroke-width="1.5" filter="url(#glow)"/>
+  <path d="M36,32 L32,14 L30,16" fill="none" stroke="#888" stroke-width="1.5" filter="url(#glow)"/>
+  <circle cx="16" cy="12" r="2" fill="#666"/>
+  <circle cx="32" cy="12" r="2" fill="#666"/>
+  <path d="M14,10 L18,10" stroke="#666" stroke-width="0.5"/>
+  <path d="M30,10 L34,10" stroke="#666" stroke-width="0.5"/>
+  <line x1="24" y1="18" x2="24" y2="24" stroke="#888" stroke-width="1.5"/>
+  <path d="M12,32 Q24,40 36,32" fill="none" stroke="#666" stroke-width="1" filter="url(#glow)">
+    <animate attributeName="d" values="M12,32 Q24,40 36,32;M12,34 Q24,42 36,34;M12,32 Q24,40 36,32" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <line x1="24" y1="24" x2="24" y2="36" stroke="#888" stroke-width="1"/>
+  <ellipse cx="24" cy="32" rx="10" ry="3" fill="none" stroke="#666" stroke-width="0.5" opacity="0.3"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow-strong"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect x="6" y="34" width="36" height="6" rx="2" fill="#0a0a1a" stroke="#6600ff" stroke-width="1" filter="url(#glow)"/>
+  <rect x="8" y="36" width="32" height="2" fill="#6600ff22"/>
+  <ellipse cx="24" cy="20" rx="12" ry="10" fill="#4400aa11" stroke="#6600ff" stroke-width="1" filter="url(#glow)">
+    <animate attributeName="rx" values="12;14;12" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="10;12;10" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="1.5s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="24" cy="20" rx="6" ry="5" fill="#6600ff22" stroke="#8844ff" stroke-width="0.5" filter="url(#glow)">
+    <animate attributeName="rx" values="6;8;6" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="5;7;5" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+  </ellipse>
+  <circle cx="24" cy="20" r="3" fill="#8844ff44" filter="url(#glow-strong)">
+    <animate attributeName="r" values="3;5;3" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="24" cy="20" r="1.5" fill="#aa66ff" opacity="0.8" filter="url(#glow)">
+    <animate attributeName="r" values="1.5;2;1.5" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M16,14 Q20,10 24,14 Q28,18 32,14" fill="none" stroke="#8844ff" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M16,26 Q20,30 24,26 Q28,22 32,26" fill="none" stroke="#8844ff" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+  </path>
+</svg>

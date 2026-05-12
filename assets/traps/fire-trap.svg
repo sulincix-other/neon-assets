@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow-strong"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect x="8" y="32" width="32" height="4" rx="2" fill="#ff4400" stroke="#ff6600" stroke-width="1" filter="url(#glow)"/>
+  <rect x="6" y="36" width="36" height="3" rx="1" fill="#330000" stroke="#ff4400" stroke-width="0.5"/>
+  <line x1="12" y1="32" x2="12" y2="28" stroke="#ff4400" stroke-width="1.5" opacity="0.3"/>
+  <line x1="24" y1="32" x2="24" y2="28" stroke="#ff4400" stroke-width="1.5" opacity="0.3"/>
+  <line x1="36" y1="32" x2="36" y2="28" stroke="#ff4400" stroke-width="1.5" opacity="0.3"/>
+  <path d="M20,32 Q18,20 14,12" fill="none" stroke="#ff6600" stroke-width="2" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="0.8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M28,32 Q30,18 34,10" fill="none" stroke="#ff4400" stroke-width="2" opacity="0.4" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="0.6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M24,32 Q24,16 24,8" fill="none" stroke="#ffcc00" stroke-width="2.5" opacity="0.7" filter="url(#glow-strong)">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="24" cy="14" r="3" fill="#ffcc00" filter="url(#glow-strong)">
+    <animate attributeName="r" values="3;4;3" dur="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="20" cy="10" r="2" fill="#ff6600" filter="url(#glow)">
+    <animate attributeName="r" values="2;1;2" dur="0.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="30" cy="8" r="2" fill="#ff4400" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="0.3s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="7" y="33" width="34" height="1" fill="#ff440044" filter="url(#glow)"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <path d="M4,30 Q12,26 20,32 Q28,38 36,30 Q44,22 44,30" fill="none" stroke="#ff6600" stroke-width="1.5" filter="url(#glow)">
+    <animate attributeName="d" values="M4,30 Q12,26 20,32 Q28,38 36,30 Q44,22 44,30;M4,32 Q12,28 20,34 Q28,40 36,32 Q44,24 44,32;M4,30 Q12,26 20,32 Q28,38 36,30 Q44,22 44,30" dur="0.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M4,34 Q12,30 20,36 Q28,42 36,34 Q44,26 44,34" fill="none" stroke="#ff4400" stroke-width="1" opacity="0.5">
+    <animate attributeName="d" values="M4,34 Q12,30 20,36 Q28,42 36,34 Q44,26 44,34;M4,36 Q12,32 20,38 Q28,44 36,36 Q44,28 44,36;M4,34 Q12,30 20,36 Q28,42 36,34 Q44,26 44,34" dur="0.4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M10,18 L14,14 L18,18 L14,22 Z" fill="#ff440033" stroke="#ff6600" stroke-width="1" filter="url(#glow)"/>
+  <path d="M16,12 L20,8 L24,12 L20,16 Z" fill="#ff660033" stroke="#ff8800" stroke-width="1" filter="url(#glow)"/>
+  <path d="M22,10 L26,6 L30,10 L26,14 Z" fill="#ff440033" stroke="#ff6600" stroke-width="1" filter="url(#glow)"/>
+  <path d="M30,14 L34,10 L38,14 L34,18 Z" fill="#ff660033" stroke="#ff8800" stroke-width="1" filter="url(#glow)"/>
+  <path d="M14,22 L18,18 L22,22 L18,26 Z" fill="#ff440033" stroke="#ff6600" stroke-width="1" filter="url(#glow)"/>
+  <path d="M26,18 L30,14 L34,18 L30,22 Z" fill="#ff660033" stroke="#ff8800" stroke-width="1" filter="url(#glow)"/>
+  <ellipe cx="24" cy="20" rx="3" ry="2" fill="#ff660044" stroke="#ffcc00" stroke-width="0.5" filter="url(#glow)"/>
+  <circle cx="24" cy="20" r="1.5" fill="#ffcc00" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="0.3s" repeatCount="indefinite"/>
+  </circle>
+</svg>

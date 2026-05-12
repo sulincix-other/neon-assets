@@ -30,6 +30,8 @@
 <div class="sect"><h2>━ Power-ups ━</h2><div class="grid" data-folder="powerups"></div></div>
 <div class="sect"><h2>━ Weapons ━</h2><div class="grid" data-folder="weapons"></div></div>
 <div class="sect"><h2>━ Bullets ━</h2><div class="grid" data-folder="bullets"></div></div>
+<div class="sect"><h2>━ Traps ━</h2><div class="grid" data-folder="traps"></div></div>
+<div class="sect"><h2>━ Environment ━</h2><div class="grid" data-folder="environment"></div></div>
 <div class="sect"><h2>━ Effects ━</h2><div class="grid" data-folder="effects"></div></div>
 <div class="sect"><h2>━ Backgrounds ━</h2><div class="grid" data-folder="backgrounds"></div></div>
 <div class="sect"><h2>━ UI Elements ━</h2><div class="grid" data-folder="ui"></div></div>
@@ -37,13 +39,15 @@
 <script>
 const files = {
   characters:['player-ninja','player-mage','player-knight','player-archer','player-rogue','player-paladin'],
-  enemies:['bat','bee','dragon','eye','ghost','goblin','golem','octopus','plant','robot','skull','slime','snake','spider','worm'],
-  collectibles:['ankh','bone','book','claw','coin','crystal','egg','feather','gem','heart','key','mushroom','pearl','ring','scroll','skull-key','star','torch'],
+  enemies:['bat','bee','demon','dragon','eye','ghost','goblin','golem','octopus','phoenix','plant','robot','skull','slime','snake','spider','worm','yeti'],
+  collectibles:['ankh','bone','book','claw','coin','crystal','diamond','egg','emerald','feather','gem','heart','key','mushroom','pearl','ring','ruby','scroll','skull-key','star','torch'],
   powerups:['amulet','bomb','boots','chest','crown','gem-blue','gem-red','helmet','hourglass','lightning','map','potion','ring','shield','star-small','wings'],
   weapons:['arrow','axe','bow','claw-weapon','crossbow','dagger','fireball','hammer','laser','mace','scythe','shuriken','spear','staff','sword','trident','whip'],
   bullets:['bullet-arrow','bullet-cannon','bullet-fire','bullet-heart','bullet-ice','bullet-lightning','bullet-magic','bullet-orb','bullet-pebble','bullet-poison','bullet-skull','bullet-slow','bullet-star','bullet-void'],
-  effects:['bubble','electricity-arc','explosion','fire','flag','forcefield','heal','ice','lightning-strike','poison','portal','pulse','shield-hit','smoke','sparkle','spike','star-burst','tornado'],
+  effects:['bless','bubble','earthquake','electricity-arc','explosion','fire','flag','forcefield','heal','ice','lightning-strike','meteor','poison','portal','pulse','rain','shield-hit','smoke','sparkle','spike','star-burst','tornado'],
   backgrounds:['bg-castle','bg-cave','bg-desert','bg-forest','bg-grid','bg-hell','bg-lava','bg-mountains','bg-neon-city','bg-snow','bg-space','bg-sunset','bg-temple','bg-water'],
+  traps:['arrow-trap','bear-trap','boulder','fire-trap','ice-trap','landmine','lightning-trap','pendulum','poison-trap','sawblade','spike-trap','vortex-trap'],
+  environment:['barrel','bones','bush','campfire','crate','flowers','lantern','mushrooms','pedestal','rock','signpost','stump','tombstone','tree'],
   ui:['badge','button','button-hover','button-large','button-pressed','button-small','checkbox','checkbox-checked','crosshair','dpad','exp-bar','exp-bar-fill','frame','health-bar','health-bar-fill','icon-coin','icon-heart','icon-home','icon-key','icon-pause','icon-play','icon-settings','icon-star','input','joystick','mana-bar','mana-bar-fill','minimap','panel','progress-ring','radio','radio-checked','slider','slider-thumb','toggle','toggle-on','tooltip']
 };
 let total = 0;

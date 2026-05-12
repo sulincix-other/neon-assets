@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow-strong"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <ellipse cx="24" cy="40" rx="14" ry="3" fill="#1a1a2e33" stroke="#444" stroke-width="0.3"/>
+  <rect x="14" y="16" width="20" height="20" rx="2" fill="#222" stroke="#666" stroke-width="1" filter="url(#glow)"/>
+  <rect x="14" y="16" width="20" height="3" rx="1" fill="#333" stroke="#777" stroke-width="0.5"/>
+  <rect x="14" y="33" width="20" height="3" rx="1" fill="#333" stroke="#777" stroke-width="0.5"/>
+  <polygon points="14,16 24,4 34,16" fill="#333" stroke="#777" stroke-width="1" filter="url(#glow)"/>
+  <polygon points="24,4 20,16 28,16" fill="#444" stroke="#888" stroke-width="0.5"/>
+  <circle cx="24" cy="8" r="2" fill="#ff6600" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="r" values="2;2.5;2" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="24" cy="8" r="5" fill="#ff6600" opacity="0.1" filter="url(#glow-strong)">
+    <animate attributeName="r" values="5;7;5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="22" y1="22" x2="26" y2="22" stroke="#666" stroke-width="0.5"/>
+  <line x1="22" y1="26" x2="26" y2="26" stroke="#666" stroke-width="0.5"/>
+  <line x1="22" y1="30" x2="26" y2="30" stroke="#666" stroke-width="0.5"/>
+</svg>

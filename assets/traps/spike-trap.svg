@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect x="4" y="34" width="40" height="8" rx="2" fill="#1a1a2e" stroke="#666" stroke-width="1"/>
+  <rect x="4" y="34" width="40" height="2" fill="#333" stroke="#555" stroke-width="0.5"/>
+  <polygon points="24,6 20,34 28,34" fill="#ccc" stroke="#aaa" stroke-width="0.5" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="3s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="12,14 9,34 15,34" fill="#bbb" stroke="#999" stroke-width="0.5" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="3s" begin="0.2s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="36,14 33,34 39,34" fill="#bbb" stroke="#999" stroke-width="0.5" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="3s" begin="0.4s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="18,6 15,34 21,34" fill="#999" stroke="#777" stroke-width="0.5" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="30,6 27,34 33,34" fill="#999" stroke="#777" stroke-width="0.5" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="3s" begin="0.8s" repeatCount="indefinite"/>
+  </polygon>
+  <rect x="4" y="38" width="40" height="4" rx="1" fill="#222" stroke="#444" stroke-width="0.5"/>
+</svg>

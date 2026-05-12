@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <ellipse cx="24" cy="32" rx="14" ry="10" fill="#aaccee" stroke="#88bbdd" stroke-width="1"/>
+  <ellipse cx="24" cy="30" rx="12" ry="8" fill="#bbddff" stroke="#88bbdd" stroke-width="0.5"/>
+  <circle cx="24" cy="18" r="10" fill="#ccddff" stroke="#88bbdd" stroke-width="1" filter="url(#glow)"/>
+  <ellipse cx="24" cy="20" rx="8" ry="6" fill="#ddeeff"/>
+  <circle cx="19" cy="16" r="2" fill="#ff4444" filter="url(#glow)">
+    <animate attributeName="r" values="2;2.5;2" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="29" cy="16" r="2" fill="#ff4444" filter="url(#glow)">
+    <animate attributeName="r" values="2;2.5;2" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="19" cy="16" r="0.8" fill="#fff"/>
+  <circle cx="29" cy="16" r="0.8" fill="#fff"/>
+  <ellipse cx="24" cy="22" rx="3" ry="1.5" fill="#88aacc" opacity="0.5"/>
+  <path d="M21,24 Q24,26 27,24" fill="none" stroke="#88aacc" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="16" cy="24" rx="3" ry="5" fill="#bbddff" stroke="#88bbdd" stroke-width="0.5"/>
+  <ellipse cx="32" cy="24" rx="3" ry="5" fill="#bbddff" stroke="#88bbdd" stroke-width="0.5"/>
+  <ellipse cx="16" cy="34" rx="4" ry="6" fill="#bbddff" stroke="#88bbdd" stroke-width="0.5"/>
+  <ellipse cx="32" cy="34" rx="4" ry="6" fill="#bbddff" stroke="#88bbdd" stroke-width="0.5"/>
+</svg>
