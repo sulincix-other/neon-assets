@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs><filter id="g"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect x="0" y="0" width="48" height="48" fill="#00080e"/>
+  <rect x="0" y="0" width="48" height="48" fill="#00101e" opacity="0.7"/>
+  <polygon points="0,32 6,26 12,34 18,24 24,30 30,22 36,28 42,20 48,26 48,48 0,48" fill="#00448833" stroke="#0088ff" stroke-width="0.6" opacity="0.5" filter="url(#g)">
+    <animate attributeName="points" values="0,32 6,26 12,34 18,24 24,30 30,22 36,28 42,20 48,26 48,48 0,48;0,32 6,38 12,34 18,40 24,30 30,38 36,28 42,36 48,26 48,48 0,48;0,32 6,26 12,34 18,24 24,30 30,22 36,28 42,20 48,26 48,48 0,48" dur="2.2s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="0,40 6,34 12,42 18,32 24,38 30,30 36,36 42,28 48,34 48,48 0,48" fill="#00448822" stroke="#0066cc" stroke-width="0.4" opacity="0.3" filter="url(#g)">
+    <animate attributeName="points" values="0,40 6,34 12,42 18,32 24,38 30,30 36,36 42,28 48,34 48,48 0,48;0,40 6,46 12,42 18,48 24,38 30,46 36,36 42,44 48,34 48,48 0,48;0,40 6,34 12,42 18,32 24,38 30,30 36,36 42,28 48,34 48,48 0,48" dur="2.6s" repeatCount="indefinite"/>
+  </polygon>
+  <line x1="4" y1="6" x2="12" y2="10" stroke="#3a8acc" stroke-width="0.4" opacity="0.2"/>
+  <line x1="20" y1="4" x2="28" y2="8" stroke="#3a8acc" stroke-width="0.4" opacity="0.2"/>
+  <line x1="36" y1="6" x2="44" y2="10" stroke="#3a8acc" stroke-width="0.4" opacity="0.2"/>
+  <line x1="10" y1="14" x2="18" y2="18" stroke="#3a8acc" stroke-width="0.3" opacity="0.15"/>
+  <line x1="30" y1="14" x2="38" y2="18" stroke="#3a8acc" stroke-width="0.3" opacity="0.15"/>
+</svg>

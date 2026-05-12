@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs><filter id="g"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect x="0" y="0" width="48" height="48" fill="#08040a"/>
+  <rect x="0" y="0" width="48" height="48" fill="#0e0612" opacity="0.7"/>
+  <path d="M4,10 Q10,4 16,10 Q22,16 28,10 Q34,4 40,10 Q44,14 48,10" fill="none" stroke="#663388" stroke-width="0.6" opacity="0.3">
+    <animate attributeName="d" values="M4,10 Q10,4 16,10 Q22,16 28,10 Q34,4 40,10 Q44,14 48,10;M4,10 Q10,16 16,10 Q22,4 28,10 Q34,16 40,10 Q44,6 48,10;M4,10 Q10,4 16,10 Q22,16 28,10 Q34,4 40,10 Q44,14 48,10" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M4,20 Q10,14 16,20 Q22,26 28,20 Q34,14 40,20 Q44,24 48,20" fill="none" stroke="#663388" stroke-width="0.5" opacity="0.2">
+    <animate attributeName="d" values="M4,20 Q10,14 16,20 Q22,26 28,20 Q34,14 40,20 Q44,24 48,20;M4,20 Q10,26 16,20 Q22,14 28,20 Q34,26 40,20 Q44,16 48,20;M4,20 Q10,14 16,20 Q22,26 28,20 Q34,14 40,20 Q44,24 48,20" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M4,30 Q10,24 16,30 Q22,36 28,30 Q34,24 40,30 Q44,34 48,30" fill="none" stroke="#663388" stroke-width="0.6" opacity="0.3">
+    <animate attributeName="d" values="M4,30 Q10,24 16,30 Q22,36 28,30 Q34,24 40,30 Q44,34 48,30;M4,30 Q10,36 16,30 Q22,24 28,30 Q34,36 40,30 Q44,26 48,30;M4,30 Q10,24 16,30 Q22,36 28,30 Q34,24 40,30 Q44,34 48,30" dur="2.8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M4,40 Q10,34 16,40 Q22,46 28,40 Q34,34 40,40 Q44,44 48,40" fill="none" stroke="#663388" stroke-width="0.5" opacity="0.2">
+    <animate attributeName="d" values="M4,40 Q10,34 16,40 Q22,46 28,40 Q34,34 40,40 Q44,44 48,40;M4,40 Q10,46 16,40 Q22,34 28,40 Q34,46 40,40 Q44,36 48,40;M4,40 Q10,34 16,40 Q22,46 28,40 Q34,34 40,40 Q44,44 48,40" dur="3.2s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="10" cy="6" r="0.6" fill="#8844aa" opacity="0.3"/>
+  <circle cx="28" cy="14" r="0.5" fill="#8844aa" opacity="0.25"/>
+  <circle cx="40" cy="26" r="0.6" fill="#8844aa" opacity="0.3"/>
+  <circle cx="16" cy="36" r="0.5" fill="#8844aa" opacity="0.25"/>
+  <circle cx="34" cy="44" r="0.5" fill="#8844aa" opacity="0.25"/>
+</svg>

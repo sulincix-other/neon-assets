@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs><filter id="g"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect x="0" y="0" width="48" height="48" fill="#080010"/>
+  <rect x="0" y="0" width="48" height="48" fill="#0e001a" opacity="0.8"/>
+  <polygon points="14,2 20,0 22,6 16,8" fill="#2a004433" stroke="#cc44ff" stroke-width="0.5" opacity="0.4"/>
+  <polygon points="8,28 14,24 18,30 12,34" fill="#2a004433" stroke="#cc44ff" stroke-width="0.5" opacity="0.3"/>
+  <polygon points="30,4 36,0 40,6 34,10" fill="#2a004433" stroke="#cc44ff" stroke-width="0.5" opacity="0.4"/>
+  <polygon points="24,22 30,18 34,24 28,28" fill="#2a004433" stroke="#cc44ff" stroke-width="0.5" opacity="0.35"/>
+  <polygon points="38,26 44,22 48,28 42,32" fill="#2a004433" stroke="#cc44ff" stroke-width="0.5" opacity="0.3"/>
+  <polygon points="2,44 8,40 12,48 4,48" fill="#2a004433" stroke="#cc44ff" stroke-width="0.5" opacity="0.3"/>
+  <polygon points="34,40 40,36 44,42 38,46" fill="#2a004433" stroke="#cc44ff" stroke-width="0.5" opacity="0.35"/>
+  <polygon points="14,10 16,6 18,10 16,14" fill="#cc44ff44" stroke="#dd66ff" stroke-width="0.5" filter="url(#g)"/>
+  <polygon points="28,14 30,10 32,14 30,18" fill="#cc44ff44" stroke="#dd66ff" stroke-width="0.5" filter="url(#g)"/>
+  <polygon points="6,34 8,30 10,34 8,38" fill="#cc44ff44" stroke="#dd66ff" stroke-width="0.5" filter="url(#g)"/>
+  <polygon points="40,32 42,28 44,32 42,36" fill="#cc44ff44" stroke="#dd66ff" stroke-width="0.5" filter="url(#g)"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs><filter id="g"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="#00ff44" stroke-width="1.5" filter="url(#g)"/>
+  <rect x="26" y="2" width="20" height="20" rx="2" fill="none" stroke="#ff00ff" stroke-width="1.5" filter="url(#g)"/>
+  <rect x="2" y="26" width="20" height="20" rx="2" fill="none" stroke="#ff6600" stroke-width="1.5" filter="url(#g)"/>
+  <rect x="26" y="26" width="20" height="20" rx="2" fill="none" stroke="#00ffff" stroke-width="1.5" filter="url(#g)"/>
+  <line x1="22" y1="12" x2="26" y2="12" stroke="#555" stroke-width="1"/>
+  <line x1="22" y1="36" x2="26" y2="36" stroke="#555" stroke-width="1"/>
+  <line x1="12" y1="22" x2="12" y2="26" stroke="#555" stroke-width="1"/>
+  <line x1="36" y1="22" x2="36" y2="26" stroke="#555" stroke-width="1"/>
+</svg>

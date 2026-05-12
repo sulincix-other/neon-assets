@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs><filter id="g"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect x="0" y="0" width="48" height="48" fill="#0a0a0e"/>
+  <rect x="0" y="0" width="48" height="48" fill="#0e0e12" opacity="0.7"/>
+  <rect x="0" y="0" width="24" height="24" fill="#12121a" opacity="0.4"/>
+  <rect x="24" y="0" width="24" height="24" fill="#0e0e14" opacity="0.3"/>
+  <rect x="0" y="24" width="24" height="24" fill="#0e0e14" opacity="0.3"/>
+  <rect x="24" y="24" width="24" height="24" fill="#12121a" opacity="0.4"/>
+  <line x1="0" y1="24" x2="48" y2="24" stroke="#334455" stroke-width="0.6" opacity="0.2"/>
+  <line x1="24" y1="0" x2="24" y2="48" stroke="#334455" stroke-width="0.6" opacity="0.2"/>
+  <line x1="0" y1="12" x2="48" y2="12" stroke="#334455" stroke-width="0.3" opacity="0.1"/>
+  <line x1="12" y1="0" x2="12" y2="24" stroke="#334455" stroke-width="0.3" opacity="0.1"/>
+  <line x1="36" y1="24" x2="36" y2="48" stroke="#334455" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="36" x2="48" y2="36" stroke="#334455" stroke-width="0.3" opacity="0.1"/>
+  <circle cx="6" cy="6" r="0.6" fill="#556677" opacity="0.2"/>
+  <circle cx="30" cy="6" r="0.5" fill="#556677" opacity="0.15"/>
+  <circle cx="6" cy="30" r="0.5" fill="#556677" opacity="0.15"/>
+  <circle cx="30" cy="30" r="0.6" fill="#556677" opacity="0.2"/>
+  <circle cx="42" cy="18" r="0.4" fill="#556677" opacity="0.15"/>
+  <circle cx="16" cy="42" r="0.4" fill="#556677" opacity="0.15"/>
+</svg>

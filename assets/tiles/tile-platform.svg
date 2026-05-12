@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs><filter id="g"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect x="0" y="0" width="48" height="48" fill="#0a0600"/>
+  <rect x="0" y="0" width="48" height="6" fill="#2a1404" stroke="#884422" stroke-width="1" filter="url(#g)"/>
+  <line x1="0" y1="6" x2="48" y2="6" stroke="#aa6633" stroke-width="1.5" filter="url(#g)"/>
+  <rect x="0" y="0" width="10" height="6" fill="none" stroke="#aa6633" stroke-width="0.4" opacity="0.3"/>
+  <rect x="10" y="0" width="10" height="6" fill="none" stroke="#aa6633" stroke-width="0.4" opacity="0.25"/>
+  <rect x="20" y="0" width="10" height="6" fill="none" stroke="#aa6633" stroke-width="0.4" opacity="0.3"/>
+  <rect x="30" y="0" width="10" height="6" fill="none" stroke="#aa6633" stroke-width="0.4" opacity="0.25"/>
+  <rect x="40" y="0" width="8" height="6" fill="none" stroke="#aa6633" stroke-width="0.4" opacity="0.3"/>
+  <rect x="0" y="6" width="48" height="42" fill="#1a0e04" opacity="0.5"/>
+  <path d="M6,12 L42,12 M6,18 L42,18 M6,24 L42,24 M6,30 L42,30 M6,36 L42,36 M6,42 L42,42" stroke="#664422" stroke-width="0.3" opacity="0.15"/>
+  <path d="M4,3 L8,3" stroke="#cc8844" stroke-width="0.4" opacity="0.2"/>
+  <path d="M24,3 L28,3" stroke="#cc8844" stroke-width="0.4" opacity="0.2"/>
+  <path d="M40,3 L44,3" stroke="#cc8844" stroke-width="0.4" opacity="0.2"/>
+</svg>
