@@ -7,34 +7,37 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { background: #0a0a1a; color: #fff; font-family: monospace; padding: 20px; }
-  h1 { text-align: center; color: #00ffff; font-size: 28px; margin-bottom: 6px; text-shadow: 0 0 20px #00ffff88; }
-  h2 { color: #ff00ff; margin: 20px 0 10px; font-size: 14px; border-bottom: 1px solid #ff00ff44; padding-bottom: 4px; text-transform: uppercase; letter-spacing: 2px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
+  h1 { text-align: center; color: #00ffff; font-size: 28px; margin-bottom: 4px; text-shadow: 0 0 20px #00ffff88; }
+  .counter { text-align: center; color: #666; margin-bottom: 16px; font-size: 12px; }
+  .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; margin-bottom: 16px; }
+  .cat-tile { background: #0d0d2a; border: 1px solid #222; border-radius: 8px; padding: 8px 4px; text-align: center; cursor: pointer; transition: 0.25s; }
+  .cat-tile:hover { border-color: #ff00ff; box-shadow: 0 0 12px #ff00ff33; }
+  .cat-tile.active { border-color: #ff00ff; background: #1a0a2a; box-shadow: 0 0 20px #ff00ff44; }
+  .cat-tile svg { width: 36px; height: 36px; display: block; margin: 0 auto 4px; }
+  .cat-tile .name { font-size: 8px; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+  .cat-tile.active .name { color: #ff00ff; }
+  .cat-tile .count { font-size: 7px; color: #555; }
+  .sect { background: #0d0d2a; border: 1px solid #00ffff22; border-radius: 8px; overflow: hidden; display: none; }
+  .sect.active { display: block; }
+  .sect h2 { color: #ff00ff; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; padding: 10px 14px; border-bottom: 1px solid #ff00ff44; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; padding: 10px; }
   .card { background: #0d0d2a; border: 1px solid #222; border-radius: 6px; padding: 6px; text-align: center; transition: 0.3s; }
   .card:hover { border-color: #ff00ff; box-shadow: 0 0 15px #ff00ff44; }
   .card svg, .card object { width: 100%; height: auto; display: block; min-height: 50px; }
   .card .name { font-size: 9px; color: #888; margin-top: 3px; }
   .card .cat { font-size: 7px; color: #555; text-transform: uppercase; }
-  .counter { text-align: center; color: #666; margin-bottom: 12px; font-size: 12px; }
-  .sect { background: #0d0d2a; border: 1px solid #00ffff22; border-radius: 8px; padding: 10px; margin-bottom: 12px; }
-  .sect h2 { margin-top: 0; }
 </style>
 </head>
 <body>
 <h1>⬡ NEON GAME ASSETS</h1>
 <p class="counter" id="counter"></p>
 
-<div class="sect"><h2>━ Characters ━</h2><div class="grid" data-folder="characters"></div></div>
-<div class="sect"><h2>━ Enemies ━</h2><div class="grid" data-folder="enemies"></div></div>
-<div class="sect"><h2>━ Collectibles ━</h2><div class="grid" data-folder="collectibles"></div></div>
-<div class="sect"><h2>━ Power-ups ━</h2><div class="grid" data-folder="powerups"></div></div>
-<div class="sect"><h2>━ Weapons ━</h2><div class="grid" data-folder="weapons"></div></div>
-<div class="sect"><h2>━ Bullets ━</h2><div class="grid" data-folder="bullets"></div></div>
-<div class="sect"><h2>━ Traps ━</h2><div class="grid" data-folder="traps"></div></div>
-<div class="sect"><h2>━ Environment ━</h2><div class="grid" data-folder="environment"></div></div>
-<div class="sect"><h2>━ Effects ━</h2><div class="grid" data-folder="effects"></div></div>
-<div class="sect"><h2>━ Backgrounds ━</h2><div class="grid" data-folder="backgrounds"></div></div>
-<div class="sect"><h2>━ UI Elements ━</h2><div class="grid" data-folder="ui"></div></div>
+<div class="cat-grid" id="catGrid"></div>
+
+<div class="sect" id="assetSect">
+  <h2 id="sectTitle"></h2>
+  <div class="grid" id="assetGrid"></div>
+</div>
 
 <script>
 const files = {
@@ -50,19 +53,53 @@ const files = {
   environment:['barrel','bones','bush','campfire','crate','flowers','lantern','mushrooms','pedestal','rock','signpost','stump','tombstone','tree'],
   ui:['badge','button','button-hover','button-large','button-pressed','button-small','checkbox','checkbox-checked','crosshair','dpad','exp-bar','exp-bar-fill','frame','health-bar','health-bar-fill','icon-coin','icon-heart','icon-home','icon-key','icon-pause','icon-play','icon-settings','icon-star','input','joystick','mana-bar','mana-bar-fill','minimap','panel','progress-ring','radio','radio-checked','slider','slider-thumb','toggle','toggle-on','tooltip']
 };
+const catMeta = {
+  characters:'Characters', enemies:'Enemies', collectibles:'Collectibles',
+  powerups:'Power-ups', weapons:'Weapons', bullets:'Bullets',
+  effects:'Effects', backgrounds:'Backgrounds', traps:'Traps',
+  environment:'Environment', ui:'UI'
+};
+
 let total = 0;
+const catGrid = document.getElementById('catGrid');
+const assetSect = document.getElementById('assetSect');
+const assetGrid = document.getElementById('assetGrid');
+const sectTitle = document.getElementById('sectTitle');
+
 Object.entries(files).forEach(([cat, list]) => {
-  const container = document.querySelector(`[data-folder="${cat}"]`);
-  if (!container) return;
   total += list.length;
+  const tile = document.createElement('div');
+  tile.className = 'cat-tile';
+  tile.dataset.cat = cat;
+  tile.innerHTML = `<object data="categories/${cat}.svg" type="image/svg+xml">${cat}</object><div class="name">${catMeta[cat]}</div><div class="count">${list.length}</div>`;
+  tile.onclick = () => select(cat);
+  catGrid.appendChild(tile);
+
   list.forEach(name => {
     const card = document.createElement('div');
     card.className = 'card';
-    card.innerHTML = `<object data="${cat}/${name}.svg" type="image/svg+xml" style="width:100%;min-height:50px;">${name}</object><div class="name">${name.replace(/-/g,' ')}</div><div class="cat">${cat}</div>`;
-    container.appendChild(card);
+    card.dataset.cat = cat;
+    card.innerHTML = `<object data="${cat}/${name}.svg" type="image/svg+xml" style="width:100%;min-height:50px;">${name}</object><div class="name">${name.replace(/-/g,' ')}</div><div class="cat">${catMeta[cat]}</div>`;
+    assetGrid.appendChild(card);
   });
 });
+
 document.getElementById('counter').textContent = total + ' total SVG assets — neon glow, transparent, animated';
+
+function select(cat) {
+  const tile = document.querySelector(`.cat-tile[data-cat="${cat}"]`);
+  const wasActive = tile.classList.contains('active');
+  document.querySelectorAll('.cat-tile.active').forEach(t => t.classList.remove('active'));
+  assetSect.classList.remove('active');
+  if (!wasActive) {
+    tile.classList.add('active');
+    sectTitle.textContent = '━ ' + catMeta[cat].toUpperCase() + ' ━';
+    assetGrid.querySelectorAll('.card').forEach(c => {
+      c.style.display = c.dataset.cat === cat ? '' : 'none';
+    });
+    assetSect.classList.add('active');
+  }
+}
 </script>
 </body>
 </html>
